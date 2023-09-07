@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/logo.jpeg"><title>音视星空</title><meta name="description" content="探索音视频领域的知识宝库">
+    <link rel="stylesheet" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css">
+    <link rel="preload" href="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css" as="style"><link rel="preload" href="/AudioVideoBlog/assets/js/48.afaf53c5.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/app.d2cafc2e.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/v-362c9a50.4b83143a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ece945e2.9f89926c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-05c19f3e.fa64e478.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-7d176b3f.bf8b9c87.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-62e77dfd.58480197.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-aa56bcde.d319d2c9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-f70ceb1c.19c41cdf.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-6368adfc.72b9fe4a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-1fa12de2.3e0cb076.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-06bb4a38.ec767255.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/512.bf2e40be.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ba1464b6.b09f6787.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-c193d65e.b8b0d616.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-46c05055.9738291b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-51d3b4c4.f3a2690c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-967c21de.216668f9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-99e5d31c.dd517209.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-166a2a94.ddd4a60b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-8daa1a0e.239d52dc.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-b9af664c.2065ab84.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-e3476bb2.0dcf3e53.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-3706649a.d5ed2a01.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/AudioVideoBlog/" class=""><img class="logo" src="/AudioVideoBlog/images/logo.jpeg" alt="音视星空"><span class="site-name can-hide">音视星空</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active"> <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%20P2P%20%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%BA%94%E7%94%A8.html" class="sidebar-item" aria-label="WebRTC P2P 原理分析：从原理到应用"><!--[--><!--]--> WebRTC P2P 原理分析：从原理到应用 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%80)Android%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC 源码分析 (一) Android 相机采集"><!--[--><!--]--> WebRTC 源码分析 (一) Android 相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%8C)Android%E8%A7%86%E9%A2%91%E7%A1%AC%E4%BB%B6%E7%BC%96%E7%A0%81.html" class="sidebar-item" aria-label="WebRTC源码分析(二)Android视频硬件编码"><!--[--><!--]--> WebRTC源码分析(二)Android视频硬件编码 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html" class="sidebar-item" aria-label="WebRTC源码分析(三)PeerConnection Client"><!--[--><!--]--> WebRTC源码分析(三)PeerConnection Client <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html" class="sidebar-item" aria-label="WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析"><!--[--><!--]--> WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%94)%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC源码分析(五)苹果设备相机采集"><!--[--><!--]--> WebRTC源码分析(五)苹果设备相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="sidebar-item" aria-label="WebRTC实战 - P2P音视频通话"><!--[--><!--]--> WebRTC实战 - P2P音视频通话 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: P2P 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: P2P 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="WebRTC实战 - QT for Windows 实现多人音视频通话"><!--[--><!--]--> WebRTC实战 - QT for Windows 实现多人音视频通话 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#简介" class="router-link-active router-link-exact-active sidebar-item" aria-label="简介"><!--[--><!--]--> 简介 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#环境搭建" class="router-link-active router-link-exact-active sidebar-item" aria-label="环境搭建"><!--[--><!--]--> 环境搭建 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_1-qt-环境准备" class="router-link-active router-link-exact-active sidebar-item" aria-label="1. QT 环境准备"><!--[--><!--]--> 1. QT 环境准备 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_2-信令服务器准备" class="router-link-active router-link-exact-active sidebar-item" aria-label="2. 信令服务器准备"><!--[--><!--]--> 2. 信令服务器准备 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_3-webrtc-静态库准备" class="router-link-active router-link-exact-active sidebar-item" aria-label="3. webrtc 静态库准备"><!--[--><!--]--> 3. webrtc 静态库准备 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_4-socketio-client-cpp-2-0-0-静态库准备" class="router-link-active router-link-exact-active sidebar-item" aria-label="4. socketio-client-cpp 2.0.0 静态库准备"><!--[--><!--]--> 4. socketio-client-cpp 2.0.0 静态库准备 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_5-qt-cmake-编写" class="router-link-active router-link-exact-active sidebar-item" aria-label="5. QT cmake 编写"><!--[--><!--]--> 5. QT cmake 编写 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#如何构建多人音视频通话" class="router-link-active router-link-exact-active sidebar-item" aria-label="如何构建多人音视频通话?"><!--[--><!--]--> 如何构建多人音视频通话? <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_1-信令交互协议" class="router-link-active router-link-exact-active sidebar-item" aria-label="1. 信令交互协议"><!--[--><!--]--> 1. 信令交互协议 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_2-本地信令交互封装" class="router-link-active router-link-exact-active sidebar-item" aria-label="2. 本地信令交互封装"><!--[--><!--]--> 2. 本地信令交互封装 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_3-多-peerconnection-管理" class="router-link-active router-link-exact-active sidebar-item" aria-label="3. 多 PeerConnection 管理"><!--[--><!--]--> 3. 多 PeerConnection 管理 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_4-房间管理" class="router-link-active router-link-exact-active sidebar-item" aria-label="4. 房间管理"><!--[--><!--]--> 4. 房间管理 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_5-如何显示" class="router-link-active router-link-exact-active sidebar-item" aria-label="5. 如何显示"><!--[--><!--]--> 5. 如何显示 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#_6-如何管理多个窗口的创建和销毁的" class="router-link-active router-link-exact-active sidebar-item" aria-label="6. 如何管理多个窗口的创建和销毁的"><!--[--><!--]--> 6. 如何管理多个窗口的创建和销毁的 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html#总结" class="router-link-active router-link-exact-active sidebar-item" aria-label="总结"><!--[--><!--]--> 总结 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20mediasoup%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/%E6%9E%84%E5%BB%BA%20WebRTC%20for%20IOS%20AppRTCMobile%20%E9%A1%B9%E7%9B%AE.html" class="sidebar-item" aria-label="构建 WebRTC for IOS AppRTCMobile 项目"><!--[--><!--]--> 构建 WebRTC for IOS AppRTCMobile 项目 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h2 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h2><p>在经过前面几篇文章对 <a href="https://chromiumdash.appspot.com/branches" target="_blank" rel="noopener noreferrer">WebRTC<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a> 的描述，相信已经不需再过多对它介绍了。前面几篇文章我们实现了 Web 、Android 端的音视频通话项目，该篇我们使用 QT UI 框架搭建 Windows 端的多 P2P 音视频通话实战项目。</p><p>项目地址:https://github.com/yangkun19921001/OpenRTCClient/tree/develop/examples/p2ps/p2ps</p><p>最终与 Android、Web 端运行后的效果如下:</p><p><img src="http://devyk.top/2022/202307161407292.jpg" alt="img_v2_2460f4ab-2447-4694-9771-45d5846f471g"></p><h2 id="环境搭建" tabindex="-1"><a class="header-anchor" href="#环境搭建" aria-hidden="true">#</a> 环境搭建</h2><h3 id="_1-qt-环境准备" tabindex="-1"><a class="header-anchor" href="#_1-qt-环境准备" aria-hidden="true">#</a> 1. QT 环境准备</h3><p>首选我们去下载 QT 6.6.0 最新版本，下载地址为: https://www.qt.io/download ,安装好后选择 cmake 进行构建项目</p><h3 id="_2-信令服务器准备" tabindex="-1"><a class="header-anchor" href="#_2-信令服务器准备" aria-hidden="true">#</a> 2. 信令服务器准备</h3><p><strong>2.1 clone 信令服务器代码</strong></p><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code><span class="token function">git</span> clone https://github.com/yangkun19921001/OpenRTCProject.git
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p><strong>2.2 启动信令服务器</strong></p><div class="language-javascript line-numbers-mode" data-ext="js"><pre class="language-javascript"><code>cd p2ps<span class="token operator">/</span>server
+
+<span class="token comment">//修改你自己的证书</span>
+<span class="token keyword">const</span> server <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">HTTPS</span> <span class="token operator">===</span> <span class="token string">&#39;true&#39;</span> <span class="token operator">?</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">key</span> <span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">&#39;./cert/rtcmedia.top.key&#39;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">cert</span><span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">&#39;./cert/rtcmedia.top_bundle.pem&#39;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> app<span class="token punctuation">)</span><span class="token operator">:</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>app<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//执行启动命令</span>
+<span class="token punctuation">.</span><span class="token operator">/</span>server_run<span class="token punctuation">.</span>js
+<span class="token punctuation">.</span><span class="token operator">/</span>proxy_server_run<span class="token punctuation">.</span>js
+
+<span class="token comment">//查看是否启动成功</span>
+lsof <span class="token operator">-</span>i<span class="token operator">:</span><span class="token number">8880</span> 和 <span class="token number">443</span>
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-webrtc-静态库准备" tabindex="-1"><a class="header-anchor" href="#_3-webrtc-静态库准备" aria-hidden="true">#</a> 3. webrtc 静态库准备</h3><ol><li>clone webrtc(m98) develop 代码</li></ol><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>git clone https://github.com/yangkun19921001/OpenRTCClient.git
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ol start="2"><li>按照 README 进行编译，编译完成后拿到静态库 build/win/debug/obj/webrtc.lib</li></ol><h3 id="_4-socketio-client-cpp-2-0-0-静态库准备" tabindex="-1"><a class="header-anchor" href="#_4-socketio-client-cpp-2-0-0-静态库准备" aria-hidden="true">#</a> 4. socketio-client-cpp 2.0.0 静态库准备</h3><p>按照官方文档进行编译，可参考:https://github.com/socketio/socket.io-client-cpp/blob/2.0.0/INSTALL.md#with-cmake</p><h3 id="_5-qt-cmake-编写" tabindex="-1"><a class="header-anchor" href="#_5-qt-cmake-编写" aria-hidden="true">#</a> 5. QT cmake 编写</h3><p>上序 4 步如果都准备好，那么就可以通过 cmake 进行将其依赖进来，如下所示:</p><div class="language-cmake line-numbers-mode" data-ext="cmake"><pre class="language-cmake"><code><span class="token keyword">cmake_minimum_required</span><span class="token punctuation">(</span><span class="token property">VERSION</span> <span class="token number">3.5</span><span class="token punctuation">)</span>
+<span class="token keyword">project</span><span class="token punctuation">(</span>p2ps <span class="token property">VERSION</span> <span class="token number">0.1</span> LANGUAGES CXX<span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_AUTOUIC</span> <span class="token boolean">ON</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_AUTOMOC</span> <span class="token boolean">ON</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_AUTORCC</span> <span class="token boolean">ON</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_CXX_STANDARD</span> <span class="token number">17</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_CXX_STANDARD_REQUIRED</span> <span class="token boolean">ON</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>BUILD_TYPE debug<span class="token punctuation">)</span>
+<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">MSVC</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token variable">CMAKE_BUILD_TYPE</span> <span class="token operator">MATCHES</span> Debug<span class="token punctuation">)</span>
+        <span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_CXX_FLAGS_DEBUG</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">CMAKE_CXX_FLAGS_DEBUG</span><span class="token punctuation">}</span></span> /MTd&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_C_FLAGS_DEBUG</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">CMAKE_C_FLAGS_DEBUG</span><span class="token punctuation">}</span></span> /MTd&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">elseif</span><span class="token punctuation">(</span><span class="token variable">CMAKE_BUILD_TYPE</span> <span class="token operator">MATCHES</span> Release<span class="token punctuation">)</span>
+        <span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_CXX_FLAGS_RELEASE</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">CMAKE_CXX_FLAGS_RELEASE</span><span class="token punctuation">}</span></span> /MT&quot;</span><span class="token punctuation">)</span>
+        <span class="token keyword">set</span><span class="token punctuation">(</span><span class="token variable">CMAKE_C_FLAGS_RELEASE</span> <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">CMAKE_C_FLAGS_RELEASE</span><span class="token punctuation">}</span></span> /MT&quot;</span><span class="token punctuation">)</span>
+        <span class="token comment">#set(BUILD_TYPE release)</span>
+    <span class="token keyword">endif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">endif</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>WEBRTC_THIRD_PARTY_PATH <span class="token punctuation">${</span><span class="token variable">CMAKE_CURRENT_SOURCE_DIR</span><span class="token punctuation">}</span>/../../../webrtc/third_party<span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>LIBWEBRTC_INCLUDE_PATH <span class="token punctuation">${</span><span class="token variable">CMAKE_CURRENT_SOURCE_DIR</span><span class="token punctuation">}</span>/../../../webrtc<span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>LIBWEBRTC_BINARY_PATH <span class="token punctuation">${</span><span class="token variable">CMAKE_CURRENT_SOURCE_DIR</span><span class="token punctuation">}</span>/../../../build_system/build/win/x64/<span class="token punctuation">${</span>BUILD_TYPE<span class="token punctuation">}</span>/obj<span class="token punctuation">)</span>
+
+<span class="token keyword">set</span><span class="token punctuation">(</span>DEPS_ROOT_PATH <span class="token punctuation">${</span><span class="token variable">CMAKE_CURRENT_SOURCE_DIR</span><span class="token punctuation">}</span>/deps<span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>SOCKET_IO_BINARY_PATH  <span class="token punctuation">${</span>DEPS_ROOT_PATH<span class="token punctuation">}</span>/socketio/win/x64/<span class="token punctuation">${</span>BUILD_TYPE<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">set</span><span class="token punctuation">(</span>SOCKET_IO_INCLUDE_PATH  <span class="token punctuation">${</span>DEPS_ROOT_PATH<span class="token punctuation">}</span>/socketio/include<span class="token punctuation">)</span>
+
+<span class="token keyword">set</span><span class="token punctuation">(</span>JSONCPP_SOURCE
+    <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">WEBRTC_THIRD_PARTY_PATH</span><span class="token punctuation">}</span></span>/jsoncpp/source/src/lib_json/json_reader.cpp&quot;</span>
+    <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">WEBRTC_THIRD_PARTY_PATH</span><span class="token punctuation">}</span></span>/jsoncpp/source/src/lib_json/json_tool.h&quot;</span>
+    <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">WEBRTC_THIRD_PARTY_PATH</span><span class="token punctuation">}</span></span>/jsoncpp/source/src/lib_json/json_value.cpp&quot;</span>
+    <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">WEBRTC_THIRD_PARTY_PATH</span><span class="token punctuation">}</span></span>/jsoncpp/source/src/lib_json/json_writer.cpp&quot;</span>
+<span class="token punctuation">)</span>
+
+
+<span class="token keyword">target_include_directories</span><span class="token punctuation">(</span><span class="token punctuation">${</span><span class="token variable">PROJECT_NAME</span><span class="token punctuation">}</span> <span class="token namespace">PUBLIC</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">LIBWEBRTC_INCLUDE_PATH</span><span class="token punctuation">}</span></span>&quot;</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">LIBWEBRTC_INCLUDE_PATH</span><span class="token punctuation">}</span></span>/third_party/abseil-cpp&quot;</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">LIBWEBRTC_INCLUDE_PATH</span><span class="token punctuation">}</span></span>/third_party/jsoncpp/source/include&quot;</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">LIBWEBRTC_INCLUDE_PATH</span><span class="token punctuation">}</span></span>/third_party/jsoncpp/generated&quot;</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">LIBWEBRTC_INCLUDE_PATH</span><span class="token punctuation">}</span></span>/third_party/libyuv/include&quot;</span>
+        <span class="token string">&quot;<span class="token interpolation"><span class="token punctuation">${</span><span class="token variable">SOCKET_IO_INCLUDE_PATH</span><span class="token punctuation">}</span></span>&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">add_definitions</span><span class="token punctuation">(</span>
+        <span class="token comment">#webrtc &amp; qt 冲突</span>
+        -DQT_DEPRECATED_WARNINGS
+        -DQT_NO_KEYWORDS
+
+        <span class="token comment">#jsoncpp</span>
+        -DJSON_USE_EXCEPTION=<span class="token number">0</span>
+        -DJSON_USE_NULLREF=<span class="token number">0</span>
+
+        <span class="token comment">#socketio</span>
+        <span class="token comment">#-DSIO_TLS</span>
+
+        -DUSE_AURA=<span class="token number">1</span>
+        -D_HAS_EXCEPTIONS=<span class="token number">0</span>
+        -D__STD_C
+        -D_CRT_RAND_S
+        -D_CRT_SECURE_NO_DEPRECATE
+        -D_SCL_SECURE_NO_DEPRECATE
+        -D_ATL_NO_OPENGL
+        -D_WINDOWS
+        -DCERT_CHAIN_PARA_HAS_EXTRA_FIELDS
+        -<span class="token variable">DPSAPI_VERSION</span>=<span class="token number">2</span>
+        -DWIN32
+        -D_SECURE_ATL
+        -DWINUWP
+        -D__WRL_NO_DEFAULT_LIB__
+ <span class="token comment">#       -DWINAPI_FAMILY=WINAPI_FAMILY_PC_APP</span>
+        -DWIN10=_WIN32_WINNT_WIN10
+        -DWIN32_LEAN_AND_MEAN
+        -DNOMINMAX
+        -D_UNICODE
+        -DUNICODE
+        -<span class="token variable">DNTDDI_VERSION</span>=NTDDI_WIN10_RS2
+        -D_WIN32_WINNT=0x0A00
+        -DWINVER=0x0A00
+        -DDEBUG
+        -DNVALGRIND
+        -DDYNAMIC_ANNOTATIONS_ENABLED=<span class="token number">0</span>
+        -DWEBRTC_ENABLE_PROTOBUF=<span class="token number">0</span>
+        -DWEBRTC_INCLUDE_INTERNAL_AUDIO_DEVICE
+        -DRTC_ENABLE_VP9
+        -DHAVE_SCTP
+        -DWEBRTC_LIBRARY_IMPL
+        -DWEBRTC_NON_STATIC_TRACE_EVENT_HANDLERS=<span class="token number">0</span>
+        -DWEBRTC_WIN
+        -DABSL_ALLOCATOR_NOTHROW=<span class="token number">1</span>
+        -DHAVE_SCTP
+        -DWEBRTC_VIDEO_CAPTURE_WINRT<span class="token punctuation">)</span>
+        
+        <span class="token keyword">target_link_libraries</span><span class="token punctuation">(</span>p2ps <span class="token namespace">PRIVATE</span>
+        ...
+        <span class="token punctuation">${</span>SOCKET_IO_BINARY_PATH<span class="token punctuation">}</span>/sioclient.lib <span class="token punctuation">${</span>SOCKET_IO_BINARY_PATH<span class="token punctuation">}</span>/sioclient_tls.lib
+
+        <span class="token punctuation">${</span>LIBWEBRTC_BINARY_PATH<span class="token punctuation">}</span>/webrtc.lib
+        winmm.lib iphlpapi.lib wbemuuid.lib secur32.lib advapi32.lib Mmdevapi.lib
+        Mfuuid.lib msdmo.lib dmoguids.lib wmcodecdspuuid.lib  comdlg32.lib dbghelp.lib
+        dnsapi.lib gdi32.lib msimg32.lib odbc32.lib odbccp32.lib oleaut32.lib shell32.lib
+        shlwapi.lib user32.lib usp10.lib uuid.lib version.lib wininet.lib winmm.lib   
+        winspool.lib ws2_32.lib delayimp.lib kernel32.lib ole32.lib crypt32.lib
+        amstrmid.lib strmiids.lib
+<span class="token punctuation">)</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>到此，在 QT 项目中的 WebRTC 和 SocketIO 环境已经搭建完成了，这里为什么要搭建 SocketIO 呢？因为在之前的 web 、server、Android 都使用的是 socketio 开源库来做的信令通信，正好它又是跨平台的，所以就不再更换了。</p><h2 id="如何构建多人音视频通话" tabindex="-1"><a class="header-anchor" href="#如何构建多人音视频通话" aria-hidden="true">#</a> 如何构建多人音视频通话?</h2><p>要在 QT 中构建一个多人的音视频通话项目，必定要经过如下几个步骤</p><h3 id="_1-信令交互协议" tabindex="-1"><a class="header-anchor" href="#_1-信令交互协议" aria-hidden="true">#</a> 1. 信令交互协议</h3><p>server 端的信令其实设计的很简单，就三组信令，如下所示:</p><p>join &gt; joined ：加入房间和加入成功的通知 leave &gt; leaved：离开房间和离开成功的通知 message：交换 offer ,candidate</p><p>更加详细的流程可以参考下面的流程图 <img src="http://devyk.top/2022/202303221325023.png" alt=""></p><h3 id="_2-本地信令交互封装" tabindex="-1"><a class="header-anchor" href="#_2-本地信令交互封装" aria-hidden="true">#</a> 2. 本地信令交互封装</h3><p>首先定义 ISinnalClient.h 抽象接口</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>namespace PCS{
+class ISignalClient {
+public:
+    enum class SignalEvent {
+        JOINED = 0,
+        JOIN,
+        LEAVED,
+        LEAVE,
+        MESSAGE
+    };
+
+    static std::string SignalEventToString(SignalEvent event) {
+        switch(event) {
+        case SignalEvent::JOINED:  return &quot;joined&quot;;
+        case SignalEvent::LEAVED:  return &quot;leaved&quot;;
+        case SignalEvent::JOIN:    return &quot;join&quot;;
+        case SignalEvent::LEAVE:   return &quot;leave&quot;;
+        case SignalEvent::MESSAGE: return &quot;message&quot;;
+        default: return &quot;unknown&quot;;
+        }
+    }
+
+    /*连接服务端*/
+    virtual bool connect(const std::string url,OnSignalEventListener* listener) = 0;
+    /*加入会话*/
+    virtual void join(const std::string roomId) = 0;
+    /*离开会话*/
+    virtual void leave(const std::string roomId) = 0;
+    /*销毁 client */
+    virtual void release() = 0;
+    /*发送消息*/
+    virtual void sendMessage(const std::string roomId, const std::string remoteId, const std::string message) = 0;
+
+    virtual std::string getSocketId() = 0;
+    virtual ~ISignalClient() = default;
+};
+
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后 socketio 根据对应的 api 去封装实现即可，详细的使用，可以参考 https://github.com/yangkun19921001/OpenRTCClient/blob/develop/examples/p2ps/p2ps/src/common/SocketIoSignalClientImpl.cpp</p><h3 id="_3-多-peerconnection-管理" tabindex="-1"><a class="header-anchor" href="#_3-多-peerconnection-管理" aria-hidden="true">#</a> 3. 多 PeerConnection 管理</h3><p>多 PeerConnection 管理其实就是把每次加入房间的 Peer 添加到一个容器中，管理起来。这里我们可以定义一个 map 结构进行管理，核心 api 如下</p><p><strong>3.1 定义一个 PeerConnection 管理结构体</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>struct Peer
+{
+    Peer() {}
+    rtc::scoped_refptr&lt;webrtc::PeerConnectionInterface&gt; peer_conn_inter_;
+    std::unique_ptr&lt;PeerConnectionObserverImpl&gt; peer_conn_obser_impl_;
+    std::unique_ptr&lt;CreateSessionDescriptionObserImpl&gt; create_offer_sess_des_impl_;
+    std::unique_ptr&lt;CreateSessionDescriptionObserImpl&gt; create_answer_sess_des_impl_;
+};
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>内部主要包含每个 PeerConnection 所需要的成员，然后通过 std::map 进行管理，如下所示</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>std::map&lt;std::string ,std::unique_ptr&lt;Peer&gt;&gt; peers_;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>map 中的key 就是连接到房间中的 id</p><p><strong>3.2 创建 PeerConnectionFactory</strong></p><p>通过如下核心代码即可创建出 PeerConnectionFactory</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>       peer_connection_factory_ = webrtc::CreatePeerConnectionFactory(
+           this-&gt;network_thread_.get() /* network_thread */,
+           this-&gt;worker_thread_.get() /* worker_thread */,
+           this-&gt;signaling_thread_.get(), /* signaling_thread */
+           nullptr /* default_adm */,
+           webrtc::CreateBuiltinAudioEncoderFactory(),
+           webrtc::CreateBuiltinAudioDecoderFactory(),
+           webrtc::CreateBuiltinVideoEncoderFactory(),
+           webrtc::CreateBuiltinVideoDecoderFactory(), nullptr /* audio_mixer */,
+           nullptr /* audio_processing */);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当创建成功后，再创建本地音视频轨道，后续会将本地音视频轨道添加到 PeerConnection 中</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>//音频轨道
+ audio_track_  = peer_connection_factory_-&gt;CreateAudioTrack(
+        kAudioLabel, peer_connection_factory_-&gt;CreateAudioSource(
+            cricket::AudioOptions()));
+ //视频轨道
+  rtc::scoped_refptr&lt;CameraCapturerTrackSource&gt; video_device =
+      CameraCapturerTrackSource::Create(1280,720,30);
+  video_track_ =
+      peer_connection_factory_-&gt;CreateVideoTrack(kVideoLabel, video_device);
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>3.3 创建 PeerConnection</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>bool PeerManager::createPeerConnection(const std::string &amp;peerId, const webrtc::PeerConnectionInterface::RTCConfiguration &amp;config
+                                       ,  OnPeerManagerEvents* ets)
+{
+  RTC_LOG(LS_INFO) &lt;&lt;__FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+  RTC_DCHECK(peer_connection_factory_);
+      std::unique_ptr&lt;PeerConnectionObserverImpl&gt; peer_conn_obimpl =
+          std::make_unique&lt;PeerConnectionObserverImpl&gt;(peerId,ets);
+      auto peerConnection = peer_connection_factory_-&gt;CreatePeerConnection(
+          config,
+          nullptr,
+          nullptr,
+          peer_conn_obimpl.get());
+      if (peerConnection) {
+          auto peer_ptr = std::make_unique&lt;Peer&gt;();
+          peer_ptr-&gt;peer_conn_inter_ = peerConnection;
+          peer_ptr-&gt;peer_conn_obser_impl_ =std::move(peer_conn_obimpl);
+          peers_[peerId] = std::move(peer_ptr);
+          if(video_track_)
+           peerConnection-&gt;AddTrack(video_track_, { kVideoLabel });
+           if(audio_track_)
+          peerConnection-&gt;AddTrack(audio_track_, { kAudioLabel });
+          return true;
+      }
+      return false;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>由上面的代码得知，我们通过 <code>peer_connection_factory_-&gt;CreatePeerConnection</code> 就可以构建一个 PeerConnection ，并把之前创建出来的本地音视频轨道添加到 PeerConnection 中，最后我们将构建出来的 PeConn 缓存到 map 中，便于后续的处理。</p><p><strong>3.4 创建 offer</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerManager::createOffer(const std::string &amp;peerId, OnPeerManagerEvents* ets)
+{
+  RTC_LOG(LS_INFO) &lt;&lt;__FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+  auto it = peers_.find(peerId);
+  if (it != peers_.end() &amp;&amp; it-&gt;second-&gt;peer_conn_inter_ != nullptr) {
+      auto obs = std::make_unique&lt;CreateSessionDescriptionObserImpl&gt;(true,peerId,ets);
+      it-&gt;second-&gt;peer_conn_inter_-&gt;CreateOffer(obs.get(), webrtc::PeerConnectionInterface::RTCOfferAnswerOptions());
+      it-&gt;second-&gt;create_offer_sess_des_impl_ = std::move(obs);
+  }else {
+      RTC_LOG(LS_ERROR) &lt;&lt; __FUNCTION__ &lt;&lt;  &quot; peers_ not found id:&quot;&lt;&lt;peerId;
+
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>上面的代码，首先根据 peerId 从缓存中拿到对应的 PeerConnection ,然后再调用它内部的 api 来进行 CreateOffer</p><p><strong>3.5 设置本地/远端 SDP</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerManager::setLocalDescription(const std::string &amp;peerId,webrtc::SessionDescriptionInterface *desc_ptr)
+{
+  RTC_LOG(LS_INFO) &lt;&lt;__FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+  auto pt = peers_.find(peerId);
+  if (pt != peers_.end()) {
+      pt-&gt;second-&gt;peer_conn_inter_-&gt;SetLocalDescription(SetSessionDescriptionObserverImpl::Create(),desc_ptr);
+
+  }else {
+      RTC_LOG(LS_ERROR) &lt;&lt; __FUNCTION__ &lt;&lt;  &quot; peers_ not found id:&quot;&lt;&lt;peerId;
+
+  }
+}
+
+void PeerManager::setRemoteDescription(const std::string &amp;peerId,webrtc::SessionDescriptionInterface *desc_ptr)
+{
+  RTC_LOG(LS_INFO) &lt;&lt;__FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+  auto pt = peers_.find(peerId);
+  if (pt != peers_.end()) {
+  pt-&gt;second-&gt;peer_conn_inter_-&gt;SetRemoteDescription(SetSessionDescriptionObserverImpl::Create(),desc_ptr);
+  }else {
+  RTC_LOG(LS_ERROR) &lt;&lt; __FUNCTION__ &lt;&lt;  &quot; peers_ not found id:&quot;&lt;&lt;peerId;
+
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>从缓存中拿到对应的 <code>PeerConnection</code> ,然后设置本地或远端的 sdp 描述信息</p><p><strong>3.6 创建 answer</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerManager::createAnswer(const std::string &amp;peerId, OnPeerManagerEvents* ets)
+{
+ RTC_LOG(LS_INFO) &lt;&lt;__FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+  auto it = peers_.find(peerId);
+  if (it != peers_.end() &amp;&amp; it-&gt;second-&gt;peer_conn_inter_ != nullptr) {
+      auto obs = std::make_unique&lt;CreateSessionDescriptionObserImpl&gt;(false,peerId,ets);
+      it-&gt;second-&gt;peer_conn_inter_-&gt;CreateAnswer(obs.get(), webrtc::PeerConnectionInterface::RTCOfferAnswerOptions());
+      it-&gt;second-&gt;create_answer_sess_des_impl_ = std::move(obs);
+  }else {
+      RTC_LOG(LS_ERROR) &lt;&lt; __FUNCTION__ &lt;&lt;  &quot; peers_ not found id:&quot;&lt;&lt;peerId;
+
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>此处与上一步逻辑一样</p><p><strong>3.7 处理 ice</strong></p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerManager::handleCandidate(std::string peerId, std::unique_ptr&lt;webrtc::IceCandidateInterface&gt; candidate)
+{
+      RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt;&quot; peerId:&quot;&lt;&lt;peerId;
+      auto pt = peers_.find(peerId);
+      if (pt != peers_.end()) {
+          pt-&gt;second-&gt;peer_conn_inter_-&gt;AddIceCandidate(
+              std::move(candidate),
+              [peerId](webrtc::RTCError error){
+                  if (error.ok()) {
+                      RTC_LOG(LS_INFO) &lt;&lt;&quot; peerId:&quot;&lt;&lt; peerId &lt;&lt; &quot; AddIceCandidate success.&quot;;
+                  } else {
+                      RTC_LOG(LS_INFO) &lt;&lt;&quot; peerId:&quot;&lt;&lt; peerId &lt;&lt; &quot;AddIceCandidate failed, error: &quot; &lt;&lt; error.message();
+                  }
+       });
+    }else {
+          RTC_LOG(LS_ERROR) &lt;&lt; __FUNCTION__ &lt;&lt;  &quot; peers_ not found id:&quot;&lt;&lt;peerId;
+
+    }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>也是从缓存中拿到对应的 PeerConnection ，然后将对方的候选者地址添加进去。</p><h3 id="_4-房间管理" tabindex="-1"><a class="header-anchor" href="#_4-房间管理" aria-hidden="true">#</a> 4. 房间管理</h3><p>定义 RTCRoomManager ，实现信令回调和PeerManager 回调，定义的核心 API 如下</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>
+namespace PCS{
+
+class RTCRoomManager : public OnSignalEventListener,public OnPeerManagerEvents {
+public:
+    RTCRoomManager();
+    virtual ~RTCRoomManager();
+
+    //连接服务器
+    void connect(const std::string url,OnRoomStateChangeCallback* callback);
+    //设置本地轨道的回调监听
+    void setLocalTrackCallback(std::function&lt;void(std::string,int,int,rtc::scoped_refptr&lt;webrtc::VideoTrackInterface&gt;)&gt; localVideoTrack);
+    //加入房间
+    void join(const std::string roomId);
+    //离开房间
+    void leave(const std::string roomId);
+    //销毁
+    void release();
+    //处理 ui 传递过来的 消息
+    void onUIMessage(Message msg);
+
+private:
+    //实现连接成功的处理代码
+    void onConnectSuccessful() override;
+    //实现正在连接的处理代码
+    void onConnecting() override ;
+    //实现连接错误的处理代码
+    void onConnectError(const std::string&amp; error) override ;
+    //实现已加入房间的处理代码
+    void onJoined(const std::string&amp; room, const std::string&amp; id, const std::vector&lt;std::string&gt;&amp; otherClientIds) override;
+    //实现离开房间的处理代码
+    void onLeaved(const std::string&amp; room, const std::string&amp; id) override ;
+    //实现接收到消息的处理代码
+    void onMessage(const std::string&amp; from, const std::string&amp; to, const std::string&amp; message) override ;
+
+    //当需要添加远端的轨道
+     void OnAddTrack(std::string peerid,
+                            rtc::scoped_refptr&lt;webrtc::RtpReceiverInterface&gt; receiver,
+                            const std::vector&lt;rtc::scoped_refptr&lt;webrtc::MediaStreamInterface&gt;&gt;&amp;
+                                streams)override;
+    //当删除远端的轨道
+     void OnRemoveTrack(std::string peerid,
+                               rtc::scoped_refptr&lt;webrtc::RtpReceiverInterface&gt; receiver) override;
+     // datachannel 消息
+     void OnDataChannel(std::string peerid,
+                               rtc::scoped_refptr&lt;webrtc::DataChannelInterface&gt; channel) override;
+     //ice 消息                          
+     void OnIceCandidate(std::string peerid,const webrtc::IceCandidateInterface* candidate) override;
+     //offer or answer create 成功
+     void OnCreateSuccess(bool offer,std::string peerid,webrtc::SessionDescriptionInterface* desc) override;
+     //offer or answer create 失败
+     void OnCreateFailure(bool offer,std::string peerid,webrtc::RTCError error) override;
+
+
+
+
+private:
+    std::unique_ptr&lt;ISignalClient&gt; socket_signal_client_imp_;
+    std::unique_ptr&lt;PeerManager&gt; peer_manager_;
+    OnRoomStateChangeCallback * room_state_change_callback_;
+    std::function&lt;void(std::string,int,int,rtc::scoped_refptr&lt;webrtc::VideoTrackInterface&gt;)&gt; local_track_callback_;
+    std::string room_id_;
+
+};
+
+} // end namespace PCS
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这就是核心 API, 它持有 <code>peer_manager</code>_、<code>socket_signal_client_imp_</code> ，分别是对 PeerConnection 和信令的交互。</p><p>比如现在 A 用户先进入房间，B 后进入房间，然后对它们的管理流程是这样的</p><ol><li>A 用户连接服务器 -&gt; 连接成功 -&gt;发起 join 信令-&gt;收到 joined 信令-&gt;createPeerConnectionFactory-&gt;摄像头开始采集-&gt;等待预览</li><li>B 用户连接服务器 -&gt; 连接成功 -&gt;发起 join 信令 -&gt;收到joined 信令(并带上了 A 用户在房间中的信息) -&gt;createPeerConnectionFactory-&gt;等待本地预览-&gt;createPeerConnection(A用户)</li><li>A 用户收到 B 用户 joined 加入房间的信令 -&gt; createOffer -&gt; 设置本地 SDP -&gt; 发送 本地 SDP offer 信令到服务器</li><li>B 用户收到 服务器转发过来的 A 用户的 offer 信令 -&gt; 设置远端的 SDP 信息 -&gt;CreateAnswer(A用户)-&gt;设置本地 SDP 信息 -&gt; 发送 answer 消息给 A</li><li>A 收到 B 发送的 answer 信令消息，调用 setRemoteDescription 函数将 B 的 SDP 设置进去</li><li>A,B 交换 candidate 消息，并将对方的 candidate 调用 AddIceCandidate 添加进去</li><li>到这一步后，就等待 onAddTrack 回调了，下一步就是如何将对方和本地的画面进行显示了</li></ol><h3 id="_5-如何显示" tabindex="-1"><a class="header-anchor" href="#_5-如何显示" aria-hidden="true">#</a> 5. 如何显示</h3><p>在 webrtc 架构中，是通过 <code>rtc::VideoSinkInterface&lt;webrtc::VideoFrame&gt;</code> 的 <code>onFrame</code> 虚函数进行通知需要新视频数据的渲染。</p><p>我们定义一个 VideoRendererWidget 然后实现 <code>rtc::VideoSinkInterface&lt;webrtc::VideoFrame&gt;</code> 的 onFrame 函数，如下所示:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>namespace PCS {
+class VideoRendererWidget : public QOpenGLWidget, protected QOpenGLFunctions,
+                            public rtc::VideoSinkInterface&lt;webrtc::VideoFrame&gt;
+{
+    Q_OBJECT
+
+public:
+    VideoRendererWidget(std::string peerId =&quot;&quot;,QWidget* parent = nullptr,webrtc::VideoTrackInterface *track =nullptr);
+    ~VideoRendererWidget();
+
+public Q_SLOTS:
+    void PlayOneFrame();
+
+protected:
+    void initializeGL() Q_DECL_OVERRIDE;
+    void resizeGL(int w, int h) Q_DECL_OVERRIDE;
+    void paintGL() Q_DECL_OVERRIDE;
+
+
+
+public:
+    // VideoSinkInterface implementation
+    void OnFrame(const webrtc::VideoFrame&amp; frame) override;
+
+
+private:
+...
+
+public:
+   webrtc::VideoTrackInterface*  video_track_;
+};
+
+}
+
+void VideoRendererWidget::OnFrame(const webrtc::VideoFrame &amp;video_frame)
+{
+    std::lock_guard&lt;std::mutex&gt; guard(renderer_mutex_);
+    rtc::scoped_refptr&lt;webrtc::I420BufferInterface&gt; buffer(
+        video_frame.video_frame_buffer()-&gt;ToI420());
+    if (video_frame.rotation() != webrtc::kVideoRotation_0) {
+        buffer = webrtc::I420Buffer::Rotate(*buffer, video_frame.rotation());
+    }
+
+    int width = buffer-&gt;width();
+    int height = buffer-&gt;height();
+
+    int ySize = width * height;
+    int uvSize = ySize / 4;  // For each U and V component
+
+    if(m_nVideoW == 0 &amp;&amp; m_nVideoH ==0)
+    {
+       if(!peer_id_.empty())  RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt; &quot; init w:&quot;&lt;&lt;width&lt;&lt;&quot; height:&quot;&lt;&lt;height &lt;&lt; &quot; peerId:&quot; &lt;&lt;peer_id_;
+    }
+
+    if(width != m_nVideoW &amp;&amp; height != m_nVideoH &amp;&amp; video_data_ != nullptr)
+    {
+         video_data_ .reset();
+
+        if(!peer_id_.empty()) RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt; &quot; change w:&quot;&lt;&lt;width&lt;&lt;&quot; height:&quot;&lt;&lt;height &lt;&lt; &quot; peerId:&quot; &lt;&lt;peer_id_;
+
+    }
+
+    if(video_data_ == nullptr){
+      video_data_ = std::make_unique&lt;uint8_t[]&gt;(width * height * 1.5); // Use make_unique to allocate array
+      if(!peer_id_.empty())
+      RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt; &quot; malloc Id:&quot;&lt;&lt;peer_id_&lt;&lt;&quot; width:&quot; &lt;&lt; width &lt;&lt;&quot; height:&quot;&lt;&lt;height;
+    }
+    memcpy(video_data_.get(), buffer-&gt;DataY(), ySize);
+    memcpy(video_data_.get() + ySize, buffer-&gt;DataU(), uvSize);
+    memcpy(video_data_.get() + ySize + uvSize, buffer-&gt;DataV(), uvSize);
+    m_nVideoW = width;
+    m_nVideoH = height;
+
+
+    // 刷新界面,触发paintGL接口
+    Q_EMIT PlayOneFrame();
+
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当我们调用 PlayOneFrame 时，就可以通过 QOpenGL 来进行渲染 I420 YUV 数据了。</p><h3 id="_6-如何管理多个窗口的创建和销毁的" tabindex="-1"><a class="header-anchor" href="#_6-如何管理多个窗口的创建和销毁的" aria-hidden="true">#</a> 6. 如何管理多个窗口的创建和销毁的</h3><p>可以通过管理 PeerConnection 那样管理 VideoRendererWidget ,还是定义一个 map</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>std::map&lt;std::string, std::unique_ptr&lt;PCS::VideoRendererWidget&gt;&gt; video_renderer_widgets_;
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><p>根据对方的 peerid 来进行缓存窗口，</p><p>当需要添加窗口时:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void MainWindow::addVideoRendererWidgetToMainWindow(std::string id, std::unique_ptr&lt;PCS::VideoRendererWidget&gt; renderer)
+{
+
+     const int itemsPerRow = 3;
+     std::unique_ptr&lt;PCS::VideoRendererWidget&gt; videoRenderer;
+     if(renderer == nullptr)
+        videoRenderer =  std::make_unique&lt;PCS::VideoRendererWidget&gt;();
+     else {
+        videoRenderer = std::move(renderer);
+     }
+     videoRenderer-&gt;setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+     // 计算新的位置
+     int count = ui-&gt;gridLayout-&gt;count();
+     int row = count / itemsPerRow;
+     int column = count % itemsPerRow;
+
+     // 添加到 gridLayout 中
+     ui-&gt;gridLayout-&gt;addWidget(videoRenderer.get(),row,column);
+     //videoRenderer-&gt;setFixedSize(1280/3,720/3);
+     // 将 widget 添加到 map 中
+     video_renderer_widgets_.insert({id, std::move(videoRenderer)});
+
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当需要删除窗口时:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void MainWindow::removeVideoRendererWidgetFromMainWindow(std::string id)
+    {
+     // 从 layout 中移除 widget，并删除它
+     // 查找 widget
+     auto it = video_renderer_widgets_.find(id);
+     if (it != video_renderer_widgets_.end())
+     {
+        // 从 layout 中移除 widget
+        ui-&gt;gridLayout-&gt;removeWidget(it-&gt;second.get());
+
+        // 从 map 中移除并删除 widget
+        video_renderer_widgets_.erase(it);
+     }
+    }
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2><p>我们通过简短的描述和一些基础的 api 来介绍了如何通过 QT webrtc 来构建一个多人的音视频通话的项目。由于本人对 QT 不是太熟悉，所以 UI 上还有少许 Bug 。但不影响核心 API 调用。</p><p>到此，通过本篇文章和之前的几篇文章我们已经实现了 Web 、Android 、Windows 之前的互通，后续会继续介绍 WebRTC 源码分析和实战项目的开发。</p></div><!--[--><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="external-link meta-item-label" href="https://github.com/yangkun19921001/AudioVideoBlogDoc/edit/main/docs/pages/webrtc/WebRTC实战 - QT for Windows 实现多人音视频通话.md" rel="noopener noreferrer" target="_blank" aria-label="Edit this page"><!--[--><!--]--> Edit this page <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 919079498@qq.com">DevYK</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="" aria-label="WebRTC 实战: P2P 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: P2P 架构的多人音视频通话解决方案 <!--[--><!--]--></a></span><span class="next"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20mediasoup%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="" aria-label="WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案 <!--[--><!--]--></a></span></p></nav><!--[--><!--[--><div id="comment" class="giscus-wrapper input-top" style="display:block;"><div class="loading-icon-wrapper" style="display:flex;align-items:center;justify-content:center;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMidYMid" viewBox="25 25 50 50"><animateTransform attributeName="transform" type="rotate" dur="2s" keyTimes="0;1" repeatCount="indefinite" values="0;360"></animateTransform><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="1,200;90,200;1,200"></animate><animate attributeName="stroke-dashoffset" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="0;-35px;-125px"></animate></circle></svg></div></div><!--]--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script src="/AudioVideoBlog/assets/js/v-362c9a50.4b83143a.js" defer></script><script src="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" defer></script><script src="/AudioVideoBlog/assets/js/48.afaf53c5.js" defer></script><script src="/AudioVideoBlog/assets/js/app.d2cafc2e.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/logo.jpeg"><title>音视星空</title><meta name="description" content="探索音视频领域的知识宝库">
+    <link rel="stylesheet" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css">
+    <link rel="preload" href="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css" as="style"><link rel="preload" href="/AudioVideoBlog/assets/js/48.afaf53c5.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/app.d2cafc2e.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/v-aa56bcde.d319d2c9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ece945e2.9f89926c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-05c19f3e.fa64e478.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-7d176b3f.bf8b9c87.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-62e77dfd.58480197.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-f70ceb1c.19c41cdf.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-6368adfc.72b9fe4a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-362c9a50.4b83143a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-1fa12de2.3e0cb076.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-06bb4a38.ec767255.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/512.bf2e40be.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ba1464b6.b09f6787.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-c193d65e.b8b0d616.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-46c05055.9738291b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-51d3b4c4.f3a2690c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-967c21de.216668f9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-99e5d31c.dd517209.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-166a2a94.ddd4a60b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-8daa1a0e.239d52dc.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-b9af664c.2065ab84.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-e3476bb2.0dcf3e53.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-3706649a.d5ed2a01.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/AudioVideoBlog/" class=""><img class="logo" src="/AudioVideoBlog/images/logo.jpeg" alt="音视星空"><span class="site-name can-hide">音视星空</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active"> <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%20P2P%20%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%BA%94%E7%94%A8.html" class="sidebar-item" aria-label="WebRTC P2P 原理分析：从原理到应用"><!--[--><!--]--> WebRTC P2P 原理分析：从原理到应用 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%80)Android%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC 源码分析 (一) Android 相机采集"><!--[--><!--]--> WebRTC 源码分析 (一) Android 相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%8C)Android%E8%A7%86%E9%A2%91%E7%A1%AC%E4%BB%B6%E7%BC%96%E7%A0%81.html" class="sidebar-item" aria-label="WebRTC源码分析(二)Android视频硬件编码"><!--[--><!--]--> WebRTC源码分析(二)Android视频硬件编码 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="WebRTC源码分析(三)PeerConnection Client"><!--[--><!--]--> WebRTC源码分析(三)PeerConnection Client <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#介绍" class="router-link-active router-link-exact-active sidebar-item" aria-label="介绍"><!--[--><!--]--> 介绍 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#程序入口和主体框架" class="router-link-active router-link-exact-active sidebar-item" aria-label="程序入口和主体框架"><!--[--><!--]--> 程序入口和主体框架 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#窗口管理" class="router-link-active router-link-exact-active sidebar-item" aria-label="窗口管理"><!--[--><!--]--> 窗口管理 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#信令处理" class="router-link-active router-link-exact-active sidebar-item" aria-label="信令处理"><!--[--><!--]--> 信令处理 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#媒体流处理" class="router-link-active router-link-exact-active sidebar-item" aria-label="媒体流处理"><!--[--><!--]--> 媒体流处理 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#总结" class="router-link-active router-link-exact-active sidebar-item" aria-label="总结"><!--[--><!--]--> 总结 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html#参考" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考"><!--[--><!--]--> 参考 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html" class="sidebar-item" aria-label="WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析"><!--[--><!--]--> WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%94)%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC源码分析(五)苹果设备相机采集"><!--[--><!--]--> WebRTC源码分析(五)苹果设备相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="sidebar-item" aria-label="WebRTC实战 - P2P音视频通话"><!--[--><!--]--> WebRTC实战 - P2P音视频通话 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: P2P 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: P2P 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="sidebar-item" aria-label="WebRTC实战 - QT for Windows 实现多人音视频通话"><!--[--><!--]--> WebRTC实战 - QT for Windows 实现多人音视频通话 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20mediasoup%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/%E6%9E%84%E5%BB%BA%20WebRTC%20for%20IOS%20AppRTCMobile%20%E9%A1%B9%E7%9B%AE.html" class="sidebar-item" aria-label="构建 WebRTC for IOS AppRTCMobile 项目"><!--[--><!--]--> 构建 WebRTC for IOS AppRTCMobile 项目 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h2 id="介绍" tabindex="-1"><a class="header-anchor" href="#介绍" aria-hidden="true">#</a> 介绍</h2><p>环境: webrtc m98 、Windows</p><p><code>peerconnection_client</code> 是一个WebRTC提供的示例程序，主要在Windows平台上演示如何使用WebRTC库来实现点对点的实时音频和视频通话。它是一个客户端应用程序，配合 <code>peerconnection_server</code> 信令服务器使用，通过信令服务器进行信令交换，建立并维护两个或者多个客户端之间的P2P连接。通过该示例对于我们去了解WebRTC的整体架构和运行流程有非常大帮助。</p><h2 id="程序入口和主体框架" tabindex="-1"><a class="header-anchor" href="#程序入口和主体框架" aria-hidden="true">#</a> 程序入口和主体框架</h2><p>找到编译好的 webrtc 示例 VS 程序，通过 VS 打开 all.sln 程序，然后将 peerconnection_client 设置为启动项，如下图所示</p><p><img src="http://devyk.top/2022/202306181214390.jpg" alt="img_v2_67fbd162-8eeb-4f1b-9c18-e1b61936d83g"></p><p>启动通话后，效果如下:</p><p><img src="http://devyk.top/2022/202306181219885.jpg" alt="img_v2_77dfb6a9-6c95-4ef0-9983-18b6e03692cg"></p><p>如果你是在本地开 2 个客户端调试，那么可以通过开启 OBS 的虚拟摄像头达到上面的效果。</p><p>peerconnection_client 主要是由以下几个部分构成</p><p><img src="http://devyk.top/2022/202306182048748.png" alt="peerconnection_client UML (1)"></p><ol><li><code>main.cc</code>: 这是程序的入口点，它创建并运行应用程序的消息循环，初始化并运行主窗口。它会创建 <code>PeerConnectionClient</code> 和 <code>Conductor</code> 对象，并且链接他们，使得它们能一起协作。</li><li><code>main_wnd.cc</code>: 它是主窗口类的实现。这个类负责所有的用户界面操作，如按钮点击、视频显示窗口、状态更新等。它还将用户操作的事件通知到 <code>Conductor</code> 对象。</li><li><code>peer_connection_client.cc</code>: 这个类是一个客户端，它会连接到 <code>PeerConnectionServer</code> 信令服务器，然后向服务器注册，并处理来自服务器的信令消息，以及发送到服务器的信令消息。</li><li><code>conductor.cc</code>: 它是整个程序的核心，负责管理 <code>PeerConnectionClient</code> 对象和 <code>MainWnd</code> 对象。它还创建并管理WebRTC的 <code>PeerConnection</code> 对象，以及处理所有的WebRTC事件。例如，当用户点击&quot;用户列表 item&quot;时，<code>MainWnd</code> 对象会将此事件通知给 <code>Conductor</code>，<code>Conductor</code> 会命令 <code>PeerConnectionClient</code> 向信令服务器发送一个信令消息，以便开始一个新的呼叫。</li></ol><p>我们来看下 main.cc 中的核心代码，也就是入口函数:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>int PASCAL wWinMain(HINSTANCE instance,
+                    HINSTANCE prev_instance,
+                    wchar_t* cmd_line,
+                    int cmd_show) {
+  rtc::WinsockInitializer winsock_init;  // 初始化 Winsock
+  CustomSocketServer ss;  // 自定义 Socket 服务器
+  rtc::AutoSocketServerThread main_thread(&amp;ss);  // 使用自定义 Socket 服务器创建主线程
+
+  WindowsCommandLineArguments win_args;  // 处理命令行参数
+  int argc = win_args.argc();
+  char** argv = win_args.argv();
+
+  absl::ParseCommandLine(argc, argv);  // 解析命令行参数
+
+  // InitFieldTrialsFromString 会存储 char*，所以这个字符数组必须比应用程序的生命周期更长
+  const std::string forced_field_trials =
+      absl::GetFlag(FLAGS_force_fieldtrials);
+  webrtc::field_trial::InitFieldTrialsFromString(forced_field_trials.c_str());
+
+  // 如果用户指定的端口超出了允许的范围 [1, 65535]，则中止程序
+  if ((absl::GetFlag(FLAGS_port) &lt; 1) || (absl::GetFlag(FLAGS_port) &gt; 65535)) {
+    printf(&quot;Error: %i is not a valid port.\n&quot;, absl::GetFlag(FLAGS_port));
+    return -1;
+  }
+
+  std::string server = absl::GetFlag(FLAGS_server);  // 获取服务器地址
+
+  MainWnd wnd(server.c_str(), absl::GetFlag(FLAGS_port),  // 创建主窗口
+              absl::GetFlag(FLAGS_autoconnect), absl::GetFlag(FLAGS_autocall));
+  if (!wnd.Create()) {
+    RTC_DCHECK_NOTREACHED();  // 如果窗口创建失败，则终止程序
+    return -1;
+  }
+
+  rtc::InitializeSSL();  // 初始化 SSL
+  PeerConnectionClient client;  // 创建 PeerConnectionClient 对象
+  rtc::scoped_refptr&lt;Conductor&gt; conductor(
+      new rtc::RefCountedObject&lt;Conductor&gt;(&amp;client, &amp;wnd));  // 创建 Conductor 对象
+
+  // 主循环
+  MSG msg;
+  BOOL gm;
+  while ((gm = ::GetMessage(&amp;msg, NULL, 0, 0)) != 0 &amp;&amp; gm != -1) {  // 获取并处理消息，如果获取失败或者程序接收到退出消息，则退出循环
+    if (!wnd.PreTranslateMessage(&amp;msg)) {  // 如果消息没有被预处理
+      ::TranslateMessage(&amp;msg);  // 翻译消息
+      ::DispatchMessage(&amp;msg);  // 分发消息
+    }
+  }
+
+  if (conductor-&gt;connection_active() || client.is_connected()) {  // 如果连接仍然活动，或者客户端仍然连接着
+    while ((conductor-&gt;connection_active() || client.is_connected()) &amp;&amp;  // 等待连接关闭
+           (gm = ::GetMessage(&amp;msg, NULL, 0, 0)) != 0 &amp;&amp; gm != -1) {
+      if (!wnd.PreTranslateMessage(&amp;msg)) {  // 如果消息没有被预处理
+        ::TranslateMessage(&amp;msg);  // 翻译消息
+        ::DispatchMessage(&amp;msg);  // 分发消息
+      }
+    }
+  }
+
+  rtc::CleanupSSL();  // 清理 SSL
+  return 0; 
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>入口函数的作用，就是初始化并启动WebRTC peerconnection，处理命令行参数，设置窗口界面，并开始接收和处理Windows消息，直到peer connection关闭和程序结束。</p><h2 id="窗口管理" tabindex="-1"><a class="header-anchor" href="#窗口管理" aria-hidden="true">#</a> 窗口管理</h2><p>窗口管理的工作主要在 main_wnd.cc create 函数，我们看一下它是如何创建 WebRTC 这个窗口的，</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>bool MainWnd::Create() {
+  RTC_DCHECK(wnd_ == NULL); // 检查窗口句柄是否为NULL，以确保窗口尚未创建。
+
+  if (!RegisterWindowClass()) // 注册窗口类。如果注册失败，返回false。
+    return false;
+
+  ui_thread_id_ = ::GetCurrentThreadId(); // 获取当前线程ID并存储，这将用于后续的UI操作。
+
+  // 创建一个新的窗口实例。这个窗口是一个具有内置子窗口的主窗口，标题为&quot;WebRTC&quot;。
+  wnd_ = ::CreateWindowExW(WS_EX_OVERLAPPEDWINDOW, kClassName, L&quot;WebRTC&quot;,
+                           WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_CLIPCHILDREN,
+                           CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
+                           CW_USEDEFAULT, NULL, NULL, GetModuleHandle(NULL), this);
+
+  // 发送一个消息给新创建的窗口，设置其字体为默认字体。
+  ::SendMessage(wnd_, WM_SETFONT, reinterpret_cast&lt;WPARAM&gt;(GetDefaultFont()),
+                TRUE);
+
+  CreateChildWindows(); // 创建子窗口，如编辑框、按钮等。
+
+  SwitchToConnectUI(); // 切换到&quot;连接&quot;用户界面状态。
+
+  return wnd_ != NULL; // 如果窗口句柄不为NULL，说明窗口创建成功，返回true；否则返回false。
+}
+
+bool MainWnd::RegisterWindowClass() {
+  if (wnd_class_) // 如果窗口类已经注册，直接返回true
+    return true;
+
+  WNDCLASSEXW wcex = {sizeof(WNDCLASSEX)}; // 初始化窗口类结构体
+  wcex.style = CS_DBLCLKS; // 设置窗口样式，这里允许接收双击消息
+  wcex.hInstance = GetModuleHandle(NULL); // 获取当前进程的实例句柄
+  wcex.hbrBackground = reinterpret_cast&lt;HBRUSH&gt;(COLOR_WINDOW + 1); // 设置窗口背景颜色
+  wcex.hCursor = ::LoadCursor(NULL, IDC_ARROW); // 设置窗口光标样式
+  wcex.lpfnWndProc = &amp;WndProc; // 设置窗口消息处理函数
+  wcex.lpszClassName = kClassName; // 设置窗口类名
+  
+  // 调用RegisterClassExW函数注册窗口类，注册成功会返回一个窗口类的原子类名，失败返回0
+  wnd_class_ = ::RegisterClassExW(&amp;wcex);
+  RTC_DCHECK(wnd_class_ != 0); // 检查窗口类是否注册成功
+  
+  return wnd_class_ != 0; // 如果窗口类注册成功，返回true；否则返回false。
+}
+
+void MainWnd::CreateChildWindow(HWND* wnd,
+                                MainWnd::ChildWindowID id,
+                                const wchar_t* class_name,
+                                DWORD control_style,
+                                DWORD ex_style) {
+  if (::IsWindow(*wnd)) // 如果窗口已存在，直接返回，避免重复创建
+    return;
+
+  // 子窗口初始为隐藏状态，在调整大小后显示
+  DWORD style = WS_CHILD | control_style; 
+  // 创建子窗口，窗口位置和尺寸初始为100*100，实际会在后续调整
+  *wnd = ::CreateWindowExW(ex_style, class_name, L&quot;&quot;, style, 100, 100, 100, 100,
+                           wnd_, reinterpret_cast&lt;HMENU&gt;(id),
+                           GetModuleHandle(NULL), NULL); 
+  RTC_DCHECK(::IsWindow(*wnd) != FALSE); // 检查窗口是否创建成功
+
+  // 发送消息给窗口，设置默认字体
+  ::SendMessage(*wnd, WM_SETFONT, reinterpret_cast&lt;WPARAM&gt;(GetDefaultFont()),
+                TRUE);
+}
+
+void MainWnd::CreateChildWindows() {
+  // 按照 tab 顺序创建子窗口
+  CreateChildWindow(&amp;label1_, LABEL1_ID, L&quot;Static&quot;, ES_CENTER | ES_READONLY, 0);
+  CreateChildWindow(&amp;edit1_, EDIT_ID, L&quot;Edit&quot;,
+                    ES_LEFT | ES_NOHIDESEL | WS_TABSTOP, WS_EX_CLIENTEDGE);
+  CreateChildWindow(&amp;label2_, LABEL2_ID, L&quot;Static&quot;, ES_CENTER | ES_READONLY, 0);
+  CreateChildWindow(&amp;edit2_, EDIT_ID, L&quot;Edit&quot;,
+                    ES_LEFT | ES_NOHIDESEL | WS_TABSTOP, WS_EX_CLIENTEDGE);
+  CreateChildWindow(&amp;button_, BUTTON_ID, L&quot;Button&quot;, BS_CENTER | WS_TABSTOP, 0);
+
+  CreateChildWindow(&amp;listbox_, LISTBOX_ID, L&quot;ListBox&quot;,
+                    LBS_HASSTRINGS | LBS_NOTIFY, WS_EX_CLIENTEDGE);
+
+  // 初始化 edit1_ 和 edit2_ 的文本内容
+  ::SetWindowTextA(edit1_, server_.c_str());
+  ::SetWindowTextA(edit2_, port_.c_str());
+}
+
+//接收系统发送给窗口的消息
+LRESULT CALLBACK MainWnd::WndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp) {
+ ...
+  return result;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个函数的目的是创建一个主窗口，并根据程序的需要进行配置。在这个窗口中，会创建一些子窗口(ip编辑框，连接按钮，用户列表等)，并先设置窗口的UI状态为 &quot;连接&quot; 状态。</p><p>最后通过调用 windows api ShowWindow 将创建好的一系列窗口显示</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void MainWnd::LayoutConnectUI(bool show) {
+  // 定义窗口布局和属性的结构体
+  struct Windows {
+    HWND wnd;
+    const wchar_t* text;
+    size_t width;
+    size_t height;
+  } windows[] = { // 初始化窗口数组
+      {label1_, L&quot;Server&quot;},  {edit1_, L&quot;XXXyyyYYYgggXXXyyyYYYggg&quot;},
+      {label2_, L&quot;:&quot;},       {edit2_, L&quot;XyXyX&quot;},
+      {button_, L&quot;Connect&quot;},
+  };
+
+  if (show) { // 如果要显示连接界面
+    const size_t kSeparator = 5; // 控件之间的间隔
+    size_t total_width = (ARRAYSIZE(windows) - 1) * kSeparator; // 计算所有窗口的总宽度
+
+    // 计算每个窗口的尺寸并更新总宽度
+    for (size_t i = 0; i &lt; ARRAYSIZE(windows); ++i) {
+      CalculateWindowSizeForText(windows[i].wnd, windows[i].text,
+                                 &amp;windows[i].width, &amp;windows[i].height);
+      total_width += windows[i].width;
+    }
+
+    RECT rc;
+    ::GetClientRect(wnd_, &amp;rc); // 获取主窗口的客户区大小
+    size_t x = (rc.right / 2) - (total_width / 2); // 计算第一个窗口的水平位置
+    size_t y = rc.bottom / 2; // 计算窗口的垂直位置
+    // 依次设置每个窗口的位置并显示
+    for (size_t i = 0; i &lt; ARRAYSIZE(windows); ++i) {
+      size_t top = y - (windows[i].height / 2);
+      ::MoveWindow(windows[i].wnd, static_cast&lt;int&gt;(x), static_cast&lt;int&gt;(top),
+                   static_cast&lt;int&gt;(windows[i].width),
+                   static_cast&lt;int&gt;(windows[i].height), TRUE);
+      x += kSeparator + windows[i].width; // 更新下一个窗口的水平位置
+      if (windows[i].text[0] != &#39;X&#39;) // 设置窗口的文本内容
+        ::SetWindowTextW(windows[i].wnd, windows[i].text);
+      ::ShowWindow(windows[i].wnd, SW_SHOWNA); // 显示窗口
+    }
+  } else { // 如果不显示连接界面，则隐藏所有窗口
+    for (size_t i = 0; i &lt; ARRAYSIZE(windows); ++i) {
+      ::ShowWindow(windows[i].wnd, SW_HIDE);
+    }
+  }
+}
+
+void MainWnd::SwitchToConnectUI() {
+  RTC_DCHECK(IsWindow()); // 确保主窗口存在
+  LayoutPeerListUI(false); // 隐藏用户列表界面
+  ui_ = CONNECT_TO_SERVER; // 更新到连接状态界面
+  LayoutConnectUI(true); // 显示连接服务器界面
+  ::SetFocus(edit1_); // 将焦点设置到第一个输入框
+
+  if (auto_connect_) // 如果设置了自动连接，则模拟点击连接按钮
+    ::PostMessage(button_, BM_CLICK, 0, 0);
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>最后窗口会这样显示: <img src="http://devyk.top/2022/202306181452454.jpg" alt="img_v2_bba77859-bbe6-4299-b571-1f26366f7b3g"></p><p>当我们点击上图中的 Connect 后，系统会发送消息给 WndProc 窗口的接收消息的回调函数上，如果连接成功，就会切换到 用户list UI，核心代码如下:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void MainWnd::SwitchToPeerList(const Peers&amp; peers) {
+  // 关闭连接界面
+  LayoutConnectUI(false);
+
+  // 重置列表内容
+  ::SendMessage(listbox_, LB_RESETCONTENT, 0, 0);
+
+  // 向列表中添加一行标题
+  AddListBoxItem(listbox_, &quot;List of currently connected peers:&quot;, -1);
+  // 循环遍历对等端列表，将每个对等端添加到列表中
+  Peers::const_iterator i = peers.begin();
+  for (; i != peers.end(); ++i)
+    AddListBoxItem(listbox_, i-&gt;second.c_str(), i-&gt;first);
+
+  // 设置当前用户界面状态为 LIST_PEERS
+  ui_ = LIST_PEERS;
+  // 显示对等端列表界面
+  LayoutPeerListUI(true);
+  // 将焦点设置到列表上
+  ::SetFocus(listbox_);
+
+  // 如果 auto_call_ 为 true，并且对等端列表不为空
+  if (auto_call_ &amp;&amp; peers.begin() != peers.end()) {
+    // 获取列表中的项目数量
+    LRESULT count = ::SendMessage(listbox_, LB_GETCOUNT, 0, 0);
+    if (count != LB_ERR) {
+      // 选中列表中的最后一个项目
+      LRESULT selection = ::SendMessage(listbox_, LB_SETCURSEL, count - 1, 0);
+      // 如果选中成功，发送一个 WM_COMMAND 消息，模拟双击事件
+      if (selection != LB_ERR)
+        ::PostMessage(wnd_, WM_COMMAND,
+                      MAKEWPARAM(GetDlgCtrlID(listbox_), LBN_DBLCLK),
+                      reinterpret_cast&lt;LPARAM&gt;(listbox_));
+    }
+  }
+}
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><code>SwitchToPeerList</code>函数首先关闭了连接界面，然后将列表的内容进行了重置，添加了一个标题到列表中，并添加了所有当前在线的对等端到列表中。接着，它将用户界面的状态切换到了显示对等端列表，并设置了列表的焦点。最后，如果设置了自动呼叫并且有对等端在线，它就会选中列表中的最后一个项目，并模拟一次双击事件。</p><p>这段代码执行后，对应的用户列表就可以显示出来，比如, 如下所示:</p><p><img src="http://devyk.top/2022/202306181519606.jpg" alt="img_v2_1986c4b8-2db5-4bff-bc5e-813f0ea8b9dg"></p><p>当双击用户名称时，双方就会发起 SDP 媒体协商，网络协商等，如果都协商成功就可以传输并显示音视频画面了，这个后面会详细说到。</p><p>如果用户主动关闭窗口，窗口会收到退出的消息并关闭 peerconnection 连接。</p><p>到这里窗口整个的创建-&gt;更新-&gt;关闭都分析完了，接下来会分析 peerconnection_client 与 server 的信令交互</p><h2 id="信令处理" tabindex="-1"><a class="header-anchor" href="#信令处理" aria-hidden="true">#</a> 信令处理</h2><p><img src="http://devyk.top/2022/202306181541946.png" alt="image-20230618154102953"></p><p>下载 pcapng 包链接: https://pan.baidu.com/s/1wGyyLSxd7_X2p7T8O1nPdg?pwd=frrr 提取码: frrr</p><p>通过抓包我们得到了如下几个信令:</p><p><strong>GET sign_in:</strong> 用户登录消息</p><p>**GET sign_out:**用户退出消息</p><p><strong>POST message:</strong> 协商交互消息</p><p><strong>GET wait:</strong> 用户等待消息</p><p>这里绘制了一张简要的时序图</p><p><img src="http://devyk.top/2022/202306181559390.png" alt="PeerConnection_Client_p2p"></p><p>当用户点击 <strong>Connect</strong> 时，会发起登录信息:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::StartLogin(const std::string&amp; server, int port) {
+  if (client_-&gt;is_connected())
+    return;
+  server_ = server;
+  //在 PeerConnectionClient 中与 server 发起信令登录连接
+  client_-&gt;Connect(server, port, GetPeerName());
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>调用这行代码后，会执行到 PeerConnectionClient::Connect 函数:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::Connect(const std::string&amp; server,
+                                   int port,
+                                   const std::string&amp; client_name) {
+  RTC_DCHECK(!server.empty());
+  RTC_DCHECK(!client_name.empty());
+	//判断当前的状态是否处于连接
+  if (state_ != NOT_CONNECTED) {
+    RTC_LOG(LS_WARNING)
+        &lt;&lt; &quot;The client must not be connected before you can call Connect()&quot;;
+    callback_-&gt;OnServerConnectionFailure();
+    return;
+  }
+	//判断ip和名称是否为空
+  if (server.empty() || client_name.empty()) {
+    callback_-&gt;OnServerConnectionFailure();
+    return;
+  }
+	//如果端口小于 0 使用默认的
+  if (port &lt;= 0)
+    port = kDefaultServerPort;
+	//设置信令服务器 IP 和端口
+  server_address_.SetIP(server);
+  server_address_.SetPort(port);
+  client_name_ = client_name;
+
+  /**
+  *if (server_address_.IsUnresolvedIP())：
+  检查 server_address_ 是否是一个未解析的 IP 地址
+  （也就是说，它实际上是一个域名）。如果是，
+  那么需要进行 DNS 解析。在这种情况下，代码会创建一个 rtc::AsyncResolver 对象来进行异步的 DNS 解析，并设置一个回调函数 PeerConnectionClient::OnResolveResult，当解析完成时这个函数会被调用。然后，代码调用 resolver_-&gt;Start(server_address_) 来开始解析过程。
+  */
+  if (server_address_.IsUnresolvedIP()) {
+    state_ = RESOLVING;
+    resolver_ = new rtc::AsyncResolver();
+    resolver_-&gt;SignalDone.connect(this, &amp;PeerConnectionClient::OnResolveResult);
+    resolver_-&gt;Start(server_address_);
+  } else {
+    DoConnect();//如果域名不需要解析，则直接发起连接
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里由于我们填的是本机地址，所以不需要 DNS 解析，直接看 DoConnect</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::DoConnect() {
+  //创建一个控制连接（发送和接收命令）
+  control_socket_.reset(CreateClientSocket(server_address_.ipaddr().family()));
+  //用于 hanging GET 操作（长轮询，用于接收服务器的实时更新）
+  hanging_get_.reset(CreateClientSocket(server_address_.ipaddr().family()));
+  //初始化套接字信号，包括连接、数据接收等事件的回调处理。
+  InitSocketSignals();
+  char buffer[1024];
+  //准备一个 HTTP GET 请求，用于登录到服务器。这个请求的路径是 &quot;/sign_in&quot;，并且包含一个查询参数，即客户端的名字。
+  snprintf(buffer, sizeof(buffer), &quot;GET /sign_in?%s HTTP/1.0\r\n\r\n&quot;,
+           client_name_.c_str());
+  onconnect_data_ = buffer;
+  //尝试连接到控制套接字。如果连接成功，ConnectControlSocket() 将返回 true，否则返回 false。
+  bool ret = ConnectControlSocket();
+  if (ret)
+    //如果连接成功，将状态设置为 SIGNING_IN，表示正在进行登录操作
+    state_ = SIGNING_IN;
+  if (!ret) {//如果连接失败，调用回调函数 OnServerConnectionFailure()，通知其他部分连接失败
+    callback_-&gt;OnServerConnectionFailure();
+  }
+  //启动当前线程
+  rtc::Thread::Current()-&gt;Start();
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>PeerConnectionClient 与服务器交互的协议是 <strong>http 短连接</strong>，此处是创建了 2 个 异步的 socket， control_socket_ 主要是主动发起一些信令的操作，比如登录，退出，offer,candide 消息等；而 hanging_get_ 它主要是向信令服务器请求对方的信令消息，比如 answer,candidate,用户列表等，每次是先发一个 wait 信令，等待信令服务器的响应，当信令服务器有响应时，就会执行这些注入的回调，代码如下:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::InitSocketSignals() {
+  RTC_DCHECK(control_socket_.get() != NULL);
+  RTC_DCHECK(hanging_get_.get() != NULL);
+  /** close 事件**/
+  control_socket_-&gt;SignalCloseEvent.connect(this,
+                                            &amp;PeerConnectionClient::OnClose);
+  hanging_get_-&gt;SignalCloseEvent.connect(this, &amp;PeerConnectionClient::OnClose);
+  
+    /** connect 事件**/
+  control_socket_-&gt;SignalConnectEvent.connect(this,
+                                              &amp;PeerConnectionClient::OnConnect);
+  hanging_get_-&gt;SignalConnectEvent.connect(
+      this, &amp;PeerConnectionClient::OnHangingGetConnect);
+  
+      /** read 事件**/
+  control_socket_-&gt;SignalReadEvent.connect(this, &amp;PeerConnectionClient::OnRead);
+  hanging_get_-&gt;SignalReadEvent.connect(
+      this, &amp;PeerConnectionClient::OnHangingGetRead);
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>发起登录连接</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>bool PeerConnectionClient::ConnectControlSocket() {
+  //检查当前的连接状态
+  RTC_DCHECK(control_socket_-&gt;GetState() == rtc::Socket::CS_CLOSED);
+  //向信令服务器发起连接请求
+  int err = control_socket_-&gt;Connect(server_address_);
+  if (err == SOCKET_ERROR) {
+    Close();
+    return false;
+  }
+  return true;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当连接成功</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::OnConnect(rtc::Socket* socket) {
+  //判断发送的信令是否为空
+  RTC_DCHECK(!onconnect_data_.empty());
+  //发送
+  size_t sent = socket-&gt;Send(onconnect_data_.c_str(), onconnect_data_.length());
+  RTC_DCHECK(sent == onconnect_data_.length());
+  onconnect_data_.clear();
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>向信令服务器发送的消息及响应</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>GET /sign_in?devyk@devyk-mwin HTTP/1.0\r\n
+ 
+HTTP/1.1 200 Added\r\n
+Server: PeerConnectionTestServer/0.1\r\n
+Cache-Control: no-cache\r\n
+Connection: close\r\n
+Content-Type: text/plain\r\n
+Content-Length: 22\r\n
+Pragma: 12\r\n
+Access-Control-Allow-Origin: *\r\n
+Access-Control-Allow-Credentials: true\r\n
+Access-Control-Allow-Methods: POST, GET, OPTIONS\r\n
+Access-Control-Allow-Headers: Content-Type, Content-Length, Connection, Cache-Control\r\n
+Access-Control-Expose-Headers: Content-Length\r\n
+\r\n
+
+devyk@devyk-mwin,12,1\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当第二个人连接进来的时候，收到的消息</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>    HTTP/1.1 200 Added\r\n
+    Server: PeerConnectionTestServer/0.1\r\n
+    Cache-Control: no-cache\r\n
+    Connection: close\r\n
+    Content-Type: text/plain\r\n
+    Content-Length: 44\r\n
+    Pragma: 13\r\n
+    Access-Control-Allow-Origin: *\r\n
+    Access-Control-Allow-Credentials: true\r\n
+    Access-Control-Allow-Methods: POST, GET, OPTIONS\r\n
+    Access-Control-Allow-Headers: Content-Type, Content-Length, Connection, Cache-Control\r\n
+    Access-Control-Expose-Headers: Content-Length\r\n
+    \r\n
+
+    devyk@devyk-mwin,13,1\n
+    devyk@devyk-mwin,12,1\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>解析 Socket 收到的协议</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::OnRead(rtc::Socket* socket) {
+  size_t content_length = 0;
+  // 读取服务器发送的数据到 control_data_ 缓冲区，并获取内容长度
+  if (ReadIntoBuffer(socket, &amp;control_data_, &amp;content_length)) {
+    size_t peer_id = 0, eoh = 0;
+    // 解析服务器的响应，获取 peer_id 和 eoh（头部结束的位置）
+    bool ok = ParseServerResponse(control_data_, content_length, &amp;peer_id, &amp;eoh);
+    if (ok) {
+      if (my_id_ == -1) {
+        // 如果是第一次响应，存储服务器分配的 ID
+        RTC_DCHECK(state_ == SIGNING_IN);
+        my_id_ = static_cast&lt;int&gt;(peer_id);
+        RTC_DCHECK(my_id_ != -1);
+
+        // 如果响应的主体部分存在内容，则将已经连接的对等方信息添加到 peers_ 列表中
+        if (content_length) {
+          size_t pos = eoh + 4;
+          while (pos &lt; control_data_.size()) {
+            size_t eol = control_data_.find(&#39;\n&#39;, pos);
+            if (eol == std::string::npos)
+              break;
+            int id = 0;
+            std::string name;
+            bool connected;
+            // 解析对等方条目，获取名字、ID以及连接状态
+            if (ParseEntry(control_data_.substr(pos, eol - pos), &amp;name, &amp;id, &amp;connected) &amp;&amp;
+                id != my_id_) {
+              // 如果对等方不是自己，将其添加到对等方列表中，并触发连接事件
+              peers_[id] = name;
+              callback_-&gt;OnPeerConnected(id, name);
+            }
+            pos = eol + 1;
+          }
+        }
+        RTC_DCHECK(is_connected());
+        // 触发已登录事件
+        callback_-&gt;OnSignedIn();
+      } else if (state_ == SIGNING_OUT) {
+        // 如果当前状态是正在退出，则关闭连接并触发断开连接事件
+        Close();
+        callback_-&gt;OnDisconnected();
+      } else if (state_ == SIGNING_OUT_WAITING) {
+        // 如果当前状态是等待退出，则退出
+        SignOut();
+      }
+    }
+
+    // 清空 control_data_ 缓冲区
+    control_data_.clear();
+
+    if (state_ == SIGNING_IN) {
+      // 如果当前状态是正在登录，则切换到已连接状态，并连接到服务器
+      RTC_DCHECK(hanging_get_-&gt;GetState() == rtc::Socket::CS_CLOSED);
+      state_ = CONNECTED;
+      hanging_get_-&gt;Connect(server_address_);
+    }
+  }
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当信令服务器发送登录响应时，会触发 PeerConnectionClient::OnRead() 函数。 首先从 socket 读取响应信息至 control_data_ 中，如果是短连接则需要关闭socket。接着验证响应中的状态码，获取信令服务器分配的peer id。 登录信令的响应中会包含其他登录客户端的信息，这些客户端的信令会显示到peer list界面上。</p><p>解析其他客户端的信息后，会触发Conductor::OnPeerConnected函数，在这个函数中会将客户端的信息显示到peer list界面上。</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>    devyk@devyk-mwin,13,1\n
+    devyk@devyk-mwin,12,1\n
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><p>响应信息的格式是：peer的name，信令服务器分配的peer id，是否处于登录状态，1表示处于登录状态，0表示登出状态。</p><p>成功登录信令服务器后，hanging_get socket 也开始登录信令服务器，用于接收信令服务器发送给客户端的信息。</p><p>当连接成功后，发送等待消息，如果有新的信令消息，服务端就转发过来</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::OnHangingGetConnect(rtc::Socket* socket) {
+  char buffer[1024];
+  snprintf(buffer, sizeof(buffer), &quot;GET /wait?peer_id=%i HTTP/1.0\r\n\r\n&quot;,
+           my_id_);
+  int len = static_cast&lt;int&gt;(strlen(buffer));
+  int sent = socket-&gt;Send(buffer, len);
+  RTC_DCHECK(sent == len);
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>//发送的数据
+
+GET /wait?peer_id=12 HTTP/1.0\r\n
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当有新的信令消息产生时，会以 wait 的响应回来</p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>    HTTP/1.1 200 OK\r\n
+    Server: PeerConnectionTestServer/0.1\r\n
+    Cache-Control: no-cache\r\n
+    Connection: close\r\n
+    Content-Type: text/plain\r\n
+    Content-Length: 22\r\n
+    Pragma: 12\r\n
+    Access-Control-Allow-Origin: *\r\n
+    Access-Control-Allow-Credentials: true\r\n
+    Access-Control-Allow-Methods: POST, GET, OPTIONS\r\n
+    Access-Control-Allow-Headers: Content-Type, Content-Length, Connection, Cache-Control\r\n
+    Access-Control-Expose-Headers: Content-Length\r\n
+    \r\n
+
+
+    devyk@devyk-mwin,13,1\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>然后就会触发下面的函数:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::OnHangingGetRead(rtc::Socket* socket) {
+  RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__;
+  size_t content_length = 0;
+  //从指定的socket读取响应信息，并做适当的处理。如果从响应中得知使用的是http短连接，那么需要关闭socket。
+  if (ReadIntoBuffer(socket, &amp;notification_data_, &amp;content_length)) {
+    size_t peer_id = 0, eoh = 0;
+    //解析响应码，并读取信令服务器分配的 peer id
+    bool ok =
+        ParseServerResponse(notification_data_, content_length, &amp;peer_id, &amp;eoh);
+
+    if (ok) {
+      // Store the position where the body begins.
+      size_t pos = eoh + 4;
+
+      //检查是否是自己的ID，如果是，那么这个通知可能是有新的成员加入或者有成员断开连接。
+      // 然后，它尝试解析主体内容，获取 peer 的 id，名称和连接状态。如果解析成功，
+      // 并且 peer 是已连接的，那么就将这个 peer 添加到 peers 列表中，
+      //并通知回调有 peer 连接；如果 peer 是断开的，那么就从 peers 列表中移除，并通知回调有 peer 断开连接
+      if (my_id_ == static_cast&lt;int&gt;(peer_id)) {
+        // A notification about a new member or a member that just
+        // disconnected.
+        int id = 0;
+        std::string name;
+        bool connected = false;
+        if (ParseEntry(notification_data_.substr(pos), &amp;name, &amp;id,
+                       &amp;connected)) {
+          if (connected) {
+            peers_[id] = name;
+            callback_-&gt;OnPeerConnected(id, name);
+          } else {
+            peers_.erase(id);
+            callback_-&gt;OnPeerDisconnected(id);
+          }
+        }
+      } else {
+          //用于处理offer、answer、candidate信令
+        OnMessageFromPeer(static_cast&lt;int&gt;(peer_id),
+                          notification_data_.substr(pos));
+      }
+    }
+
+    notification_data_.clear();
+  }
+
+  if (hanging_get_-&gt;GetState() == rtc::Socket::CS_CLOSED &amp;&amp;
+      state_ == CONNECTED) {
+    hanging_get_-&gt;Connect(server_address_);
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当信令服务器需要主动发送消息给客户端时，会包装成wait信令的响应信息。有其他客户端登录或登出信令服务器时，会通知本端，本端会根据信令服务器反馈的信息更新peer list界面的用户列表。 当收到信令服务器转发的其他客户端的offer、answer、candidate信息时，会进入OnMessageFromPeer()函数处理。</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void PeerConnectionClient::OnMessageFromPeer(int peer_id,
+                                             const std::string&amp; message) {
+  if (message.length() == (sizeof(kByeMessage) - 1) &amp;&amp;
+      message.compare(kByeMessage) == 0) {
+    callback_-&gt;OnPeerDisconnected(peer_id);
+  } else {
+    /*收到的是offer、answer、candidate信令*/
+    callback_-&gt;OnMessageFromPeer(peer_id, message);
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>分析完读取和解析 http 协议后，我们看下如何进行 CreateOffer 的，</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::ConnectToPeer(int peer_id) {
+  RTC_DCHECK(peer_id_ == -1);
+  RTC_DCHECK(peer_id != -1);
+
+  if (peer_connection_.get()) {
+    main_wnd_-&gt;MessageBox(
+        &quot;Error&quot;, &quot;We only support connecting to one peer at a time&quot;, true);
+    return;
+  }
+
+  //初始化 peer ，成功就创建 CreateOffer
+  if (InitializePeerConnection()) {
+    peer_id_ = peer_id;
+    peer_connection_-&gt;CreateOffer(
+        this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions());
+  } else {
+    main_wnd_-&gt;MessageBox(&quot;Error&quot;, &quot;Failed to initialize PeerConnection&quot;, true);
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当点击 peer list 用户中任意一个，会执行到此处，如果 InitializePeerConnection 为 true ，那么就可以 CreateOffer.</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>//第一步:
+bool Conductor::InitializePeerConnection() {
+  // 检查是否已存在 peer_connection_factory_ 或
+  // peer_connection_，都应该是空的，否则报错
+  RTC_DCHECK(!peer_connection_factory_);
+  RTC_DCHECK(!peer_connection_);
+  // 没有 signaling_thread_ 的话就创建一个新的
+  if (!signaling_thread_.get()) {
+    signaling_thread_ = rtc::Thread::CreateWithSocketServer();
+    signaling_thread_-&gt;Start();
+  }
+
+  // 使用 signaling_thread_ 创建 PeerConnectionFactory
+  // PeerConnectionFactory 是用于生成 PeerConnections, MediaStreams 和 MediaTracks 的工厂类
+  peer_connection_factory_ = webrtc::CreatePeerConnectionFactory(
+      nullptr /* network_thread */, 
+      nullptr /* worker_thread */,
+      signaling_thread_.get(), /* signaling_thread */
+      nullptr /* default_adm */,
+      webrtc::CreateBuiltinAudioEncoderFactory(),
+      webrtc::CreateBuiltinAudioDecoderFactory(),
+      webrtc::CreateBuiltinVideoEncoderFactory(),
+      webrtc::CreateBuiltinVideoDecoderFactory(), nullptr /* audio_mixer */,
+      nullptr /* audio_processing */);
+
+    // 如果 PeerConnectionFactory 初始化失败，清理资源并返回错误
+  if (!peer_connection_factory_) {
+    main_wnd_-&gt;MessageBox(&quot;Error&quot;, &quot;Failed to initialize PeerConnectionFactory&quot;,
+                          true);
+    DeletePeerConnection();
+    return false;
+  }
+
+  // 创建 PeerConnection，如果失败，清理资源并返回错误
+  if (!CreatePeerConnection()) {
+    main_wnd_-&gt;MessageBox(&quot;Error&quot;, &quot;CreatePeerConnection failed&quot;, true);
+    DeletePeerConnection();
+  }
+  // 添加音频和视频轨道
+  AddTracks();
+  // 返回 peer_connection_ 是否已初始化
+  return peer_connection_ != nullptr;
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>第一步: <code>InitializePeerConnection()</code>：这个方法的目标是初始化一个PeerConnectionFactory，并创建一个PeerConnection。首先，它确保PeerConnectionFactory和PeerConnection不存在。如果还没有创建信令线程，就创建一个新的。然后，使用这个信令线程创建一个新的PeerConnectionFactory，用于后续生成PeerConnections, MediaStreams和MediaTracks。如果PeerConnectionFactory创建失败，它将清理资源并返回错误。最后，创建一个PeerConnection，添加音频和视频轨道，并返回是否成功初始化PeerConnection。</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>//第二步:
+bool Conductor::CreatePeerConnection() {
+  // 检查 peer_connection_factory_ 是否存在且 peer_connection_
+  // 是否为空，否则报错
+  RTC_DCHECK(peer_connection_factory_);
+  RTC_DCHECK(!peer_connection_);
+
+  // 创建一个新的 PeerConnection 配置
+  webrtc::PeerConnectionInterface::RTCConfiguration config;
+  config.sdp_semantics = webrtc::SdpSemantics::kUnifiedPlan;
+  webrtc::PeerConnectionInterface::IceServer server;
+  server.uri = GetPeerConnectionString();
+  config.servers.push_back(server);
+
+  // 使用 PeerConnectionFactory 和配置创建新的 PeerConnection
+  peer_connection_ = peer_connection_factory_-&gt;CreatePeerConnection(
+      config, nullptr, nullptr, this);
+  return peer_connection_ != nullptr;
+}
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>第二步: <code>CreatePeerConnection()</code>：这个方法用于创建一个新的PeerConnection。首先，它会检查PeerConnectionFactory是否存在，且PeerConnection是否为空。然后，创建一个新的PeerConnection配置，设置SDP协议的语义为统一计划，并添加ICE服务器。最后，使用PeerConnectionFactory和刚刚创建的配置来创建一个新的PeerConnection，并返回创建是否成功。</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>//第三步:
+void Conductor::AddTracks() {
+  // 如果已经添加了轨道，则不再添加
+  if (!peer_connection_-&gt;GetSenders().empty()) {
+    return;  // Already added tracks.
+  }
+  // 创建音频轨道并添加到 PeerConnection
+  rtc::scoped_refptr&lt;webrtc::AudioTrackInterface&gt; audio_track(
+      peer_connection_factory_-&gt;CreateAudioTrack(
+          kAudioLabel, peer_connection_factory_-&gt;CreateAudioSource(
+                           cricket::AudioOptions())));
+  auto result_or_error = peer_connection_-&gt;AddTrack(audio_track, {kStreamId});
+  if (!result_or_error.ok()) {
+    RTC_LOG(LS_ERROR) &lt;&lt; &quot;Failed to add audio track to PeerConnection: &quot;
+                      &lt;&lt; result_or_error.error().message();
+  }
+  // 创建视频源和视频轨道并添加到 PeerConnection
+  rtc::scoped_refptr&lt;CapturerTrackSource&gt; video_device =
+      CapturerTrackSource::Create();
+  if (video_device) {
+    rtc::scoped_refptr&lt;webrtc::VideoTrackInterface&gt; video_track_(
+        peer_connection_factory_-&gt;CreateVideoTrack(kVideoLabel, video_device));
+    main_wnd_-&gt;StartLocalRenderer(video_track_);
+
+    result_or_error = peer_connection_-&gt;AddTrack(video_track_, {kStreamId});
+    if (!result_or_error.ok()) {
+      RTC_LOG(LS_ERROR) &lt;&lt; &quot;Failed to add video track to PeerConnection: &quot;
+                        &lt;&lt; result_or_error.error().message();
+    }
+  } else {
+    RTC_LOG(LS_ERROR) &lt;&lt; &quot;OpenVideoCaptureDevice failed&quot;;
+  }
+
+  // 将界面切换到流媒体 UI
+  main_wnd_-&gt;SwitchToStreamingUI();
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>第三步: <code>AddTracks()</code>：这个方法的目标是向PeerConnection添加音频和视频轨道。首先，它会检查是否已经添加了轨道。如果已经添加了，则不再添加。然后，创建一个音频轨道并添加到PeerConnection。之后，创建一个视频源和一个视频轨道，并添加到PeerConnection。如果添加轨道失败，会记录错误信息。最后，将用户界面切换到流媒体UI。</p><p>这些步骤(任意平台)是设置WebRTC通信的关键步骤。在创建并初始化PeerConnectionFactory之后，我们可以创建PeerConnection，然后在PeerConnection上添加音频和视频轨道，这样我们就可以开始进行实时的音视频通信了。</p><p>如果这三步执行都没有问题，那么就是发起 offer 了，当 CreateOffer 成功时，会有成功回调</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>/** SDP 设置成功回调*/
+void Conductor::OnSuccess(webrtc::SessionDescriptionInterface* desc) {
+  peer_connection_-&gt;SetLocalDescription(
+      DummySetSessionDescriptionObserver::Create(), desc);
+
+  std::string sdp;
+  desc-&gt;ToString(&amp;sdp);
+
+  // For loopback test. To save some connecting delay.
+  if (loopback_) {
+    // Replace message type from &quot;offer&quot; to &quot;answer&quot;
+    std::unique_ptr&lt;webrtc::SessionDescriptionInterface&gt; session_description =
+        webrtc::CreateSessionDescription(webrtc::SdpType::kAnswer, sdp);
+    peer_connection_-&gt;SetRemoteDescription(
+        DummySetSessionDescriptionObserver::Create(),
+        session_description.release());
+    return;
+  }
+
+  Json::StyledWriter writer;
+  Json::Value jmessage;
+  jmessage[kSessionDescriptionTypeName] =
+      webrtc::SdpTypeToString(desc-&gt;GetType());
+  jmessage[kSessionDescriptionSdpName] = sdp;
+  SendMessage(writer.write(jmessage));
+}
+
+void Conductor::SendMessage(const std::string&amp; json_object) {
+  std::string* msg = new std::string(json_object);
+  main_wnd_-&gt;QueueUIThreadCallback(SEND_MESSAGE_TO_PEER, msg);
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>当 CreateOffer 成功时，首先调用 webrtc SetLocalDescription API 设置当前的 SDP，</p><p>然后会将 offer sdp 发送给信令服务器，通过抓包，我们拿到了具体的 sdp 信息</p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code><span class="token request-line"><span class="token method property">POST</span> <span class="token request-target url">/message?peer_id=13&amp;to=12</span> <span class="token http-version property">HTTP/1.0</span></span>\r\n
+<span class="token header"><span class="token header-name keyword">Content-Length</span><span class="token punctuation">:</span> <span class="token header-value">5608\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Content-Type</span><span class="token punctuation">:</span> <span class="token header-value">text/plain\r\n</span></span>
+\r\n
+
+{\n
+     &quot;sdp&quot; : &quot;v=0\r\no=- 6269511735434714595 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 63 111 103 104 9 0 8 106 105 13 110 1
+       &quot;type&quot; : &quot;offer&quot;\n
+}\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这是 peer_id=13 发送给 12 的 offer 信令，对应的响应如下:</p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>    HTTP/1.1 200 OK\r\n
+    Server: PeerConnectionTestServer/0.1\r\n
+    Cache-Control: no-cache\r\n
+    Connection: close\r\n
+    Content-Type: text/plain\r\n
+    Content-Length: 0\r\n
+    Access-Control-Allow-Origin: *\r\n
+    Access-Control-Allow-Credentials: true\r\n
+    Access-Control-Allow-Methods: POST, GET, OPTIONS\r\n
+    Access-Control-Allow-Headers: Content-Type, Content-Length, Connection, Cache-Control\r\n
+    Access-Control-Expose-Headers: Content-Length\r\n
+    \r\n
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>服务端通过转发给另一个 peer wait 的 offer 响应</p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>    HTTP/1.1 200 OK\r\n
+    Server: PeerConnectionTestServer/0.1\r\n
+    Cache-Control: no-cache\r\n
+    Connection: close\r\n
+    Content-Type: text/plain\r\n
+    Content-Length: 5608\r\n
+    Pragma: 13\r\n
+    Access-Control-Allow-Origin: *\r\n
+    Access-Control-Allow-Credentials: true\r\n
+    Access-Control-Allow-Methods: POST, GET, OPTIONS\r\n
+    Access-Control-Allow-Headers: Content-Type, Content-Length, Connection, Cache-Control\r\n
+    Access-Control-Expose-Headers: Content-Length\r\n
+    \r\n
+
+    {\n
+        &quot;sdp&quot; : &quot;v=0\r\no=- 6269511735434714595 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS stream_id\r\nm=audio 9 UDP/TLS/RTP/SAVPF 63 111 103 104 9 0 8 106 105 13 110 1
+       &quot;type&quot; : &quot;offer&quot;\n
+    }\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>另一方收到 offer 响应后，会执行刚刚我们分析的 OnMessageFromPeer 函数</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::OnMessageFromPeer(int peer_id, const std::string&amp; message) {
+  RTC_DCHECK(peer_id_ == peer_id || peer_id_ == -1);
+  RTC_DCHECK(!message.empty());
+  /*此时被动peer还没有创建PeerConnection对象*/
+  if (!peer_connection_.get()) {
+    RTC_DCHECK(peer_id_ == -1);
+    peer_id_ = peer_id;
+    /*创建PeerConnection对象*/
+    if (!InitializePeerConnection()) {
+      RTC_LOG(LS_ERROR) &lt;&lt; &quot;Failed to initialize our PeerConnection instance&quot;;
+      client_-&gt;SignOut();
+      return;
+    }
+  } else if (peer_id != peer_id_) {
+    RTC_DCHECK(peer_id_ != -1);
+    RTC_LOG(LS_WARNING)
+        &lt;&lt; &quot;Received a message from unknown peer while already in a &quot;
+           &quot;conversation with a different peer.&quot;;
+    return;
+  }
+  /*将收到的消息解析成json对象*/
+  Json::Reader reader;
+  Json::Value jmessage;
+  if (!reader.parse(message, jmessage)) {
+    RTC_LOG(LS_WARNING) &lt;&lt; &quot;Received unknown message. &quot; &lt;&lt; message;
+    return;
+  }
+  std::string type_str;
+  std::string json_object;
+  /*从json消息中解析出消息的类型*/
+  rtc::GetStringFromJsonObject(jmessage, kSessionDescriptionTypeName,
+                               &amp;type_str);
+  if (!type_str.empty()) {
+    if (type_str == &quot;offer-loopback&quot;) {
+      // This is a loopback call.
+      // Recreate the peerconnection with DTLS disabled.
+      if (!ReinitializePeerConnectionForLoopback()) {
+        RTC_LOG(LS_ERROR) &lt;&lt; &quot;Failed to initialize our PeerConnection instance&quot;;
+        DeletePeerConnection();
+        client_-&gt;SignOut();
+      }
+      return;
+    }
+    /*获取消息的类型*/
+    absl::optional&lt;webrtc::SdpType&gt; type_maybe =
+        webrtc::SdpTypeFromString(type_str);
+    if (!type_maybe) {
+      RTC_LOG(LS_ERROR) &lt;&lt; &quot;Unknown SDP type: &quot; &lt;&lt; type_str;
+      return;
+    }
+    /*从json消息中获取sdp，此处为offer。*/
+    webrtc::SdpType type = *type_maybe;
+    std::string sdp;
+    if (!rtc::GetStringFromJsonObject(jmessage, kSessionDescriptionSdpName,
+                                      &amp;sdp)) {
+      RTC_LOG(LS_WARNING)
+          &lt;&lt; &quot;Can&#39;t parse received session description message.&quot;;
+      return;
+    }
+    /*将offer转成webrtc可以理解的对象*/
+    webrtc::SdpParseError error;
+    std::unique_ptr&lt;webrtc::SessionDescriptionInterface&gt; session_description =
+        webrtc::CreateSessionDescription(type, sdp, &amp;error);
+    if (!session_description) {
+      RTC_LOG(LS_WARNING)
+          &lt;&lt; &quot;Can&#39;t parse received session description message. &quot;
+             &quot;SdpParseError was: &quot;
+          &lt;&lt; error.description;
+      return;
+    }
+    RTC_LOG(LS_INFO) &lt;&lt; &quot; Received session description :&quot; &lt;&lt; message;
+    /*将offer通过SetRemoteDescription设置到PeerConnection中*/
+    peer_connection_-&gt;SetRemoteDescription(
+        DummySetSessionDescriptionObserver::Create(),
+        session_description.release());
+    /*收到了对端的offer，本端需要产生answer。*/
+    if (type == webrtc::SdpType::kOffer) {
+      peer_connection_-&gt;CreateAnswer(
+          this, webrtc::PeerConnectionInterface::RTCOfferAnswerOptions());
+    }
+  } else { //处理 candidate 消息
+    std::string sdp_mid;
+    int sdp_mlineindex = 0;
+    std::string sdp;
+    if (!rtc::GetStringFromJsonObject(jmessage, kCandidateSdpMidName,
+                                      &amp;sdp_mid) ||
+        !rtc::GetIntFromJsonObject(jmessage, kCandidateSdpMlineIndexName,
+                                   &amp;sdp_mlineindex) ||
+        !rtc::GetStringFromJsonObject(jmessage, kCandidateSdpName, &amp;sdp)) {
+      RTC_LOG(LS_WARNING) &lt;&lt; &quot;Can&#39;t parse received message.&quot;;
+      return;
+    }
+    webrtc::SdpParseError error;
+    std::unique_ptr&lt;webrtc::IceCandidateInterface&gt; candidate(
+        webrtc::CreateIceCandidate(sdp_mid, sdp_mlineindex, sdp, &amp;error));
+    if (!candidate.get()) {
+      RTC_LOG(LS_WARNING) &lt;&lt; &quot;Can&#39;t parse received candidate message. &quot;
+                             &quot;SdpParseError was: &quot;
+                          &lt;&lt; error.description;
+      return;
+    }
+    if (!peer_connection_-&gt;AddIceCandidate(candidate.get())) {
+      RTC_LOG(LS_WARNING) &lt;&lt; &quot;Failed to apply the received candidate&quot;;
+      return;
+    }
+    RTC_LOG(LS_INFO) &lt;&lt; &quot; Received candidate :&quot; &lt;&lt; message;
+  }
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这一段代码较长，其实就3个意思</p><ol><li>实例化 PeerConnectionFactoy 和 PeerConnectionClient</li><li>设置远端的 SDP,并 CreateAnswer</li><li>收到对方发来的 candidate 消息，并添加到 PeerConnectionClient 中</li></ol><p>上面第二点中的 CreateAnswer 创建成功后，也会想 CreateOffer 一样，有成功的回调，然后再发送给对方，这里就不再过多描述了。后面我们再看一下 candidate 消息</p><p>当 CreateOffer 、CreateAnswer 后，WebRTC 会通过 OnIceCandidate 回调信息将一些候选者的信息通知给我们</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::OnIceCandidate(const webrtc::IceCandidateInterface* candidate) {
+  RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt; &quot; &quot; &lt;&lt; candidate-&gt;sdp_mline_index();
+  // For loopback test. To save some connecting delay.
+  if (loopback_) {
+    if (!peer_connection_-&gt;AddIceCandidate(candidate)) {
+      RTC_LOG(LS_WARNING) &lt;&lt; &quot;Failed to apply the received candidate&quot;;
+    }
+    return;
+  }
+
+  Json::StyledWriter writer;
+  Json::Value jmessage;
+
+  jmessage[kCandidateSdpMidName] = candidate-&gt;sdp_mid();
+  jmessage[kCandidateSdpMlineIndexName] = candidate-&gt;sdp_mline_index();
+  std::string sdp;
+  if (!candidate-&gt;ToString(&amp;sdp)) {
+    RTC_LOG(LS_ERROR) &lt;&lt; &quot;Failed to serialize candidate&quot;;
+    return;
+  }
+  jmessage[kCandidateSdpName] = sdp;
+  SendMessage(writer.write(jmessage));
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这里主要是将 webrtc ice 中收集到的 candidate 组装成 json 然后发送给信令服务器，服务器再转发给另一端</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>    POST /message?peer_id=13&amp;to=12 HTTP/1.0\r\n
+    Content-Length: 186\r\n
+    Content-Type: text/plain\r\n
+    \r\n
+
+    {\n
+       &quot;candidate&quot; : &quot;candidate:1019731727 1 udp 2122260223 192.168.1.104 53072 typ host generation 0 ufrag IEDW network-id 3 network-cost 10&quot;,\n
+       &quot;sdpMLineIndex&quot; : 0,\n
+       &quot;sdpMid&quot; : &quot;0&quot;\n
+    }\n
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>通过抓包得到了如上 candidate 消息，注意 candidate 会存在多个消息，双方收到后并添加到 PeerConnectionClient 中，如果网络协商成功，那么就可以进行采集-&gt;编码-&gt;传输了。</p><p>最后一个信令是 退出信令 ，当关闭窗口时，发送如下格式的信令</p><div class="language-http line-numbers-mode" data-ext="http"><pre class="language-http"><code>request:
+<span class="token request-line"><span class="token method property">GET</span> <span class="token request-target url">/sign_out?peer_id=13</span> <span class="token http-version property">HTTP/1.0</span></span>\r\n
+
+response:
+<span class="token response-status"><span class="token http-version property">HTTP/1.1</span> <span class="token status-code number">200</span> <span class="token reason-phrase string">OK\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Server</span><span class="token punctuation">:</span> <span class="token header-value">PeerConnectionTestServer/0.1\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Cache-Control</span><span class="token punctuation">:</span> <span class="token header-value">no-cache\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Connection</span><span class="token punctuation">:</span> <span class="token header-value">close\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Content-Type</span><span class="token punctuation">:</span> <span class="token header-value">text/plain\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Content-Length</span><span class="token punctuation">:</span> <span class="token header-value">0\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Access-Control-Allow-Origin</span><span class="token punctuation">:</span> <span class="token header-value">*\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Access-Control-Allow-Credentials</span><span class="token punctuation">:</span> <span class="token header-value">true\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Access-Control-Allow-Methods</span><span class="token punctuation">:</span> <span class="token header-value">POST, GET, OPTIONS\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Access-Control-Allow-Headers</span><span class="token punctuation">:</span> <span class="token header-value">Content-Type, Content-Length, Connection, Cache-Control\r\n</span></span>
+<span class="token header"><span class="token header-name keyword">Access-Control-Expose-Headers</span><span class="token punctuation">:</span> <span class="token header-value">Content-Length\r\n</span></span>
+\r\n
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>到此，所有信令就分析完了，建议大家可以通过抓包去分析对应的流程。</p><h2 id="媒体流处理" tabindex="-1"><a class="header-anchor" href="#媒体流处理" aria-hidden="true">#</a> 媒体流处理</h2><p>当媒体协商，网络协商完成后，就能进行等待收对方发过来的音视频流了，当有新轨道产生，会执行 OnAddTrack 回调</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::OnAddTrack(
+    rtc::scoped_refptr&lt;webrtc::RtpReceiverInterface&gt; receiver,
+    const std::vector&lt;rtc::scoped_refptr&lt;webrtc::MediaStreamInterface&gt;&gt;&amp;
+        streams) {
+  RTC_LOG(LS_INFO) &lt;&lt; __FUNCTION__ &lt;&lt; &quot; &quot; &lt;&lt; receiver-&gt;id();
+  main_wnd_-&gt;QueueUIThreadCallback(NEW_TRACK_ADDED,
+                                   receiver-&gt;track().release());
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>经过一系列的线程切换，最后会执行到如下代码:</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>void Conductor::UIThreadCallback(int msg_id, void* data) 
+{
+...
+    case NEW_TRACK_ADDED: {
+      auto* track = reinterpret_cast&lt;webrtc::MediaStreamTrackInterface*&gt;(data);
+      if (track-&gt;kind() == webrtc::MediaStreamTrackInterface::kVideoKind) {
+        /*获取远端video track*/
+        auto* video_track = static_cast&lt;webrtc::VideoTrackInterface*&gt;(track);
+
+        /*送至MainWnd处理*/
+        main_wnd_-&gt;StartRemoteRenderer(video_track);
+      }
+      track-&gt;Release();
+      break;
+    }
+...
+}
+
+void MainWnd::StartRemoteRenderer(webrtc::VideoTrackInterface* remote_video) 
+{
+  /*生成远端视频渲染器，同时将远端视频渲染器注册到webrtc中。*/
+  remote_renderer_.reset(new VideoRenderer(handle(), 1, 1, remote_video));
+}
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>最后，当有视频帧产生时，会通过 OnFrame 回调给 ViewRenderer (其实 WebRTC 的接口设计在各平台上基本上一致的。前面我们分析 Android 视频渲染或者采集，也都是通过 OnFrame 虚函数给回调的)</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>// OnFrame方法，当接收到新的视频帧时被调用
+void MainWnd::VideoRenderer::OnFrame(const webrtc::VideoFrame&amp; video_frame) {
+  // 用AutoLock确保同一时刻只有一个线程可以访问此方法
+  {
+    AutoLock&lt;VideoRenderer&gt; lock(this);
+
+    // 获取视频帧的I420格式的缓冲区
+    rtc::scoped_refptr&lt;webrtc::I420BufferInterface&gt; buffer(
+        video_frame.video_frame_buffer()-&gt;ToI420());
+    // 如果视频帧的旋转角度不为0，则将视频帧旋转至指定角度
+    if (video_frame.rotation() != webrtc::kVideoRotation_0) {
+      buffer = webrtc::I420Buffer::Rotate(*buffer, video_frame.rotation());
+    }
+
+    // 设置视频帧的宽度和高度
+    SetSize(buffer-&gt;width(), buffer-&gt;height());
+
+    // 确保image_已经被初始化
+    RTC_DCHECK(image_.get() != NULL);
+    // 将I420格式的图像数据转换为ARGB格式，然后存储到image_中
+    libyuv::I420ToARGB(buffer-&gt;DataY(), buffer-&gt;StrideY(), buffer-&gt;DataU(),
+                       buffer-&gt;StrideU(), buffer-&gt;DataV(), buffer-&gt;StrideV(),
+                       image_.get(),
+                       bmi_.bmiHeader.biWidth * bmi_.bmiHeader.biBitCount / 8,
+                       buffer-&gt;width(), buffer-&gt;height());
+  }
+  // 使窗口重绘
+  InvalidateRect(wnd_, NULL, TRUE);
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>这个方法是WebRTC在接收到新的视频帧时的处理过程。它首先获取视频帧的I420格式的缓冲区，然后检查视频帧是否需要旋转，如果需要就进行旋转。接着设置视频帧的宽度和高度，然后将I420格式的图像数据转换为ARGB格式，并存储在image_中。最后，通过调用<code>InvalidateRect</code>函数使窗口无效，这会触发窗口的重绘事件，即显示新的视频帧。</p><p>接下来窗口会收到 WM_PAINT 消息，标识即需要重新绘制窗口</p><div class="language-c++ line-numbers-mode" data-ext="c++"><pre class="language-c++"><code>// OnPaint方法，当窗口需要重绘时被调用
+void MainWnd::OnPaint() {
+  PAINTSTRUCT ps;
+  // 开始绘制
+  ::BeginPaint(handle(), &amp;ps);
+
+  RECT rc;
+  // 获取窗口客户区的大小
+  ::GetClientRect(handle(), &amp;rc);
+
+  VideoRenderer* local_renderer = local_renderer_.get();
+  VideoRenderer* remote_renderer = remote_renderer_.get();
+  // 如果正在进行流媒体播放并且本地和远程渲染器都存在
+  if (ui_ == STREAMING &amp;&amp; remote_renderer &amp;&amp; local_renderer) {
+    // 使用AutoLock确保同一时刻只有一个线程可以访问这些渲染器
+    AutoLock&lt;VideoRenderer&gt; local_lock(local_renderer);
+    AutoLock&lt;VideoRenderer&gt; remote_lock(remote_renderer);
+
+    // 获取远程渲染器的视频信息
+    const BITMAPINFO&amp; bmi = remote_renderer-&gt;bmi();
+    int height = abs(bmi.bmiHeader.biHeight);
+    int width = bmi.bmiHeader.biWidth;
+
+    // 获取远程渲染器的视频图像
+    const uint8_t* image = remote_renderer-&gt;image();
+    // 如果图像存在，开始进行绘制
+    if (image != NULL) {
+      // 创建一个设备上下文与ps.hdc兼容的内存设备上下文
+      HDC dc_mem = ::CreateCompatibleDC(ps.hdc);
+      // 设置位图拉伸模式为HALFTONE
+      ::SetStretchBltMode(dc_mem, HALFTONE);
+
+      // 设置映射模式以保持宽高比
+      HDC all_dc[] = {ps.hdc, dc_mem};
+      for (size_t i = 0; i &lt; arraysize(all_dc); ++i) {
+        SetMapMode(all_dc[i], MM_ISOTROPIC);
+        SetWindowExtEx(all_dc[i], width, height, NULL);
+        SetViewportExtEx(all_dc[i], rc.right, rc.bottom, NULL);
+      }
+
+      // 创建一个与ps.hdc兼容的位图
+      HBITMAP bmp_mem = ::CreateCompatibleBitmap(ps.hdc, rc.right, rc.bottom);
+      // 将新位图选入内存设备上下文，同时保留旧的位图
+      HGDIOBJ bmp_old = ::SelectObject(dc_mem, bmp_mem);
+
+      // 将设备上下文坐标转换为逻辑坐标
+      POINT logical_area = {rc.right, rc.bottom};
+      DPtoLP(ps.hdc, &amp;logical_area, 1);
+
+      // 创建一个黑色的画刷并填充矩形
+      HBRUSH brush = ::CreateSolidBrush(RGB(0, 0, 0));
+      RECT logical_rect = {0, 0, logical_area.x, logical_area.y};
+      ::FillRect(dc_mem, &amp;logical_rect, brush);
+      // 删除创建的画刷
+      ::DeleteObject(brush);
+
+      // 计算绘制图像的起始位置，以使图
+      // 计算绘制图像的起始位置，以使图像位于中心
+      int x = (logical_area.x / 2) - (width / 2);
+      int y = (logical_area.y / 2) - (height / 2);
+
+      // 使用StretchDIBits函数将视频帧图像画到内存设备上下文
+      StretchDIBits(dc_mem, x, y, width, height, 0, 0, width, height, image,
+                    &amp;bmi, DIB_RGB_COLORS, SRCCOPY);
+
+      // 如果窗口足够大，就在右下角画一个本地视频流的缩略图
+      if ((rc.right - rc.left) &gt; 200 &amp;&amp; (rc.bottom - rc.top) &gt; 200) {
+        const BITMAPINFO&amp; bmi = local_renderer-&gt;bmi();
+        image = local_renderer-&gt;image();
+        int thumb_width = bmi.bmiHeader.biWidth / 4;
+        int thumb_height = abs(bmi.bmiHeader.biHeight) / 4;
+        StretchDIBits(dc_mem, logical_area.x - thumb_width - 10,
+                      logical_area.y - thumb_height - 10, thumb_width,
+                      thumb_height, 0, 0, bmi.bmiHeader.biWidth,
+                      -bmi.bmiHeader.biHeight, image, &amp;bmi, DIB_RGB_COLORS,
+                      SRCCOPY);
+      }
+
+      // 使用BitBlt函数将内存设备上下文的内容复制到屏幕设备上下文
+      BitBlt(ps.hdc, 0, 0, logical_area.x, logical_area.y, dc_mem, 0, 0,
+             SRCCOPY);
+
+      // 清理创建的对象
+      ::SelectObject(dc_mem, bmp_old);
+      ::DeleteObject(bmp_mem);
+      ::DeleteDC(dc_mem);
+    } else {
+      // 如果还没有接收到视频流，就填充黑色背景，并绘制提示文本
+      HBRUSH brush = ::CreateSolidBrush(RGB(0, 0, 0));
+      ::FillRect(ps.hdc, &amp;rc, brush);
+      ::DeleteObject(brush);
+
+      // 设置字体、文本颜色和背景模式，然后绘制提示文本
+      HGDIOBJ old_font = ::SelectObject(ps.hdc, GetDefaultFont());
+      ::SetTextColor(ps.hdc, RGB(0xff, 0xff, 0xff));
+      ::SetBkMode(ps.hdc, TRANSPARENT);
+
+      std::string text(kConnecting);
+      if (!local_renderer-&gt;image()) {
+        text += kNoVideoStreams;
+      } else {
+        text += kNoIncomingStream;
+      }
+      ::DrawTextA(ps.hdc, text.c_str(), -1, &amp;rc,
+                  DT_SINGLELINE | DT_CENTER | DT_VCENTER);
+      ::SelectObject(ps.hdc, old_font);
+    }
+  } else {
+    // 如果不在流媒体播放状态，就填充白色背景
+    HBRUSH brush = ::CreateSolidBrush(::GetSysColor(COLOR_WINDOW));
+    ::FillRect(ps.hdc, &amp;rc, brush);
+    ::DeleteObject(brush);
+  }
+
+  // 结束绘制
+  ::EndPaint(handle(), &amp;ps);
+}
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>代码有点长，这里做一下总结:</p><ol><li>如果正在播放流媒体且本地和远程渲染器都存在，则绘制远程视频流。如果窗口足够大，就在右下角绘制本地视频流的缩略图。</li><li>如果还没有接收到视频流，则在黑色背景上显示提示信息。</li><li>如果不在播放流媒体的状态，则只填充窗口的背景。</li></ol><p>到此，对端视频可以正常的显示出来了。</p><h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2><p>该篇文章详细的分析了 peerconnection_client 客户端的窗口交互、信令交互、和视频渲染等处理，篇幅较长，建议自己先 debug peerconnection_client demo, 如流程上有不懂的再来看该篇对应的处理讲解。下一篇文章会进行 Windows P2P 的实战开发，与之前的 Web 和 Android 可以进行音视频通话。</p><h2 id="参考" tabindex="-1"><a class="header-anchor" href="#参考" aria-hidden="true">#</a> 参考</h2><ul><li><a href="https://blog.csdn.net/qiuguolu1108/article/details/120588283?spm=1001.2014.3001.5501" target="_blank" rel="noopener noreferrer">WebRTC PeerConnection Client源码分析2-PeerConnectionClient<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></li></ul></div><!--[--><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="external-link meta-item-label" href="https://github.com/yangkun19921001/AudioVideoBlogDoc/edit/main/docs/pages/webrtc/WebRTC源码分析(三)PeerConnection Client.md" rel="noopener noreferrer" target="_blank" aria-label="Edit this page"><!--[--><!--]--> Edit this page <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: yang1001yk@gmail.com">make</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%8C)Android%E8%A7%86%E9%A2%91%E7%A1%AC%E4%BB%B6%E7%BC%96%E7%A0%81.html" class="" aria-label="WebRTC源码分析(二)Android视频硬件编码"><!--[--><!--]--> WebRTC源码分析(二)Android视频硬件编码 <!--[--><!--]--></a></span><span class="next"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html" class="" aria-label="WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析"><!--[--><!--]--> WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析 <!--[--><!--]--></a></span></p></nav><!--[--><!--[--><div id="comment" class="giscus-wrapper input-top" style="display:block;"><div class="loading-icon-wrapper" style="display:flex;align-items:center;justify-content:center;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMidYMid" viewBox="25 25 50 50"><animateTransform attributeName="transform" type="rotate" dur="2s" keyTimes="0;1" repeatCount="indefinite" values="0;360"></animateTransform><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="1,200;90,200;1,200"></animate><animate attributeName="stroke-dashoffset" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="0;-35px;-125px"></animate></circle></svg></div></div><!--]--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script src="/AudioVideoBlog/assets/js/v-aa56bcde.d319d2c9.js" defer></script><script src="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" defer></script><script src="/AudioVideoBlog/assets/js/48.afaf53c5.js" defer></script><script src="/AudioVideoBlog/assets/js/app.d2cafc2e.js" defer></script>
+  </body>
+</html>

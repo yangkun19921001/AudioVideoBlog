@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/images/logo.jpeg"><title>音视星空</title><meta name="description" content="探索音视频领域的知识宝库">
+    <link rel="stylesheet" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css">
+    <link rel="preload" href="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/css/styles.8f5bfb09.css" as="style"><link rel="preload" href="/AudioVideoBlog/assets/js/48.afaf53c5.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/app.d2cafc2e.js" as="script"><link rel="preload" href="/AudioVideoBlog/assets/js/v-06bb4a38.ec767255.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ece945e2.9f89926c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-05c19f3e.fa64e478.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-7d176b3f.bf8b9c87.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-62e77dfd.58480197.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-aa56bcde.d319d2c9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-f70ceb1c.19c41cdf.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-6368adfc.72b9fe4a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-362c9a50.4b83143a.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-1fa12de2.3e0cb076.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/512.bf2e40be.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-ba1464b6.b09f6787.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-c193d65e.b8b0d616.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-46c05055.9738291b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-51d3b4c4.f3a2690c.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-967c21de.216668f9.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-99e5d31c.dd517209.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-166a2a94.ddd4a60b.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-8daa1a0e.239d52dc.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-b9af664c.2065ab84.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-e3476bb2.0dcf3e53.js" as="script"><link rel="prefetch" href="/AudioVideoBlog/assets/js/v-3706649a.d5ed2a01.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/AudioVideoBlog/" class=""><img class="logo" src="/AudioVideoBlog/images/logo.jpeg" alt="音视星空"><span class="site-name can-hide">音视星空</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/AudioVideoBlog/pages/home.md" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/AudioVideoBlog/pages/webrtc/README.md" class="" aria-label="WebRTC"><!--[--><!--]--> WebRTC <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/yangkun19921001/AudioVideoBlogDoc" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading active"> <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%20P2P%20%E4%BB%8E%E5%8E%9F%E7%90%86%E5%88%B0%E5%BA%94%E7%94%A8.html" class="sidebar-item" aria-label="WebRTC P2P 原理分析：从原理到应用"><!--[--><!--]--> WebRTC P2P 原理分析：从原理到应用 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%80)Android%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC 源码分析 (一) Android 相机采集"><!--[--><!--]--> WebRTC 源码分析 (一) Android 相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%8C)Android%E8%A7%86%E9%A2%91%E7%A1%AC%E4%BB%B6%E7%BC%96%E7%A0%81.html" class="sidebar-item" aria-label="WebRTC源码分析(二)Android视频硬件编码"><!--[--><!--]--> WebRTC源码分析(二)Android视频硬件编码 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html" class="sidebar-item" aria-label="WebRTC源码分析(三)PeerConnection Client"><!--[--><!--]--> WebRTC源码分析(三)PeerConnection Client <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html" class="router-link-active router-link-exact-active router-link-active sidebar-item active" aria-label="WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析"><!--[--><!--]--> WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_1-简介" class="router-link-active router-link-exact-active sidebar-item" aria-label="1. 简介"><!--[--><!--]--> 1. 简介 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-发送" class="router-link-active router-link-exact-active sidebar-item" aria-label="2. 发送"><!--[--><!--]--> 2. 发送 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-1-采集" class="router-link-active router-link-exact-active sidebar-item" aria-label="2.1 采集"><!--[--><!--]--> 2.1 采集 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-2-编码" class="router-link-active router-link-exact-active sidebar-item" aria-label="2.2 编码"><!--[--><!--]--> 2.2 编码 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-3-编码结束-rtp-打包" class="router-link-active router-link-exact-active sidebar-item" aria-label="2.3 编码结束 -&gt; RTP 打包"><!--[--><!--]--> 2.3 编码结束 -&gt; RTP 打包 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-4-打包完成-pacedsender-队列" class="router-link-active router-link-exact-active sidebar-item" aria-label="2.4 打包完成 -&gt; PacedSender 队列"><!--[--><!--]--> 2.4 打包完成 -&gt; PacedSender 队列 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_2-5-socket-send" class="router-link-active router-link-exact-active sidebar-item" aria-label="2.5 Socket#send"><!--[--><!--]--> 2.5 Socket#send <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_3-接收" class="router-link-active router-link-exact-active sidebar-item" aria-label="3. 接收"><!--[--><!--]--> 3. 接收 <!--[--><!--]--></a><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_3-1-接收-rtp-包" class="router-link-active router-link-exact-active sidebar-item" aria-label="3.1 接收 RTP 包"><!--[--><!--]--> 3.1 接收 RTP 包 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_3-2-解包-放入缓冲区" class="router-link-active router-link-exact-active sidebar-item" aria-label="3.2 解包 &amp; 放入缓冲区"><!--[--><!--]--> 3.2 解包 &amp; 放入缓冲区 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_3-3-解码" class="router-link-active router-link-exact-active sidebar-item" aria-label="3.3 解码"><!--[--><!--]--> 3.3 解码 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#_3-4-视频渲染" class="router-link-active router-link-exact-active sidebar-item" aria-label="3.4 视频渲染"><!--[--><!--]--> 3.4 视频渲染 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#总结" class="router-link-active router-link-exact-active sidebar-item" aria-label="总结"><!--[--><!--]--> 总结 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E5%9B%9B)%20Android%E3%80%81IOS%E3%80%81Windows%20%E8%A7%86%E9%A2%91%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90.html#参考" class="router-link-active router-link-exact-active sidebar-item" aria-label="参考"><!--[--><!--]--> 参考 <!--[--><!--]--></a><!----></li><!--]--></ul></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%94)%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="sidebar-item" aria-label="WebRTC源码分析(五)苹果设备相机采集"><!--[--><!--]--> WebRTC源码分析(五)苹果设备相机采集 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="sidebar-item" aria-label="WebRTC实战 - P2P音视频通话"><!--[--><!--]--> WebRTC实战 - P2P音视频通话 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20P2P%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: P2P 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: P2P 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20QT%20for%20Windows%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D.html" class="sidebar-item" aria-label="WebRTC实战 - QT for Windows 实现多人音视频通话"><!--[--><!--]--> WebRTC实战 - QT for Windows 实现多人音视频通话 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E5%AE%9E%E6%88%98%20-%20mediasoup%E6%9E%B6%E6%9E%84%E7%9A%84%E5%A4%9A%E4%BA%BA%E9%9F%B3%E8%A7%86%E9%A2%91%E9%80%9A%E8%AF%9D%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html" class="sidebar-item" aria-label="WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案"><!--[--><!--]--> WebRTC 实战: mediasoup SFU 架构的多人音视频通话解决方案 <!--[--><!--]--></a><!----></li><li><a href="/AudioVideoBlog/pages/webrtc/%E6%9E%84%E5%BB%BA%20WebRTC%20for%20IOS%20AppRTCMobile%20%E9%A1%B9%E7%9B%AE.html" class="sidebar-item" aria-label="构建 WebRTC for IOS AppRTCMobile 项目"><!--[--><!--]--> 构建 WebRTC for IOS AppRTCMobile 项目 <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h2 id="_1-简介" tabindex="-1"><a class="header-anchor" href="#_1-简介" aria-hidden="true">#</a> 1. 简介</h2><p>该篇文章主要针对在 (IOS、Android、Windows)平台上的视频数据的流程，只有当我们熟悉了这些流程后，才能快速针对性的去看某块代码。下面是一个简要的流程图，我们根据这个流程图然后来分析。</p><p><img src="http://devyk.top/2022/202308281502315.png" alt="WebRTC 简要数据流程图 (1)"></p><p><strong>环境:</strong></p><ul><li>webrtc: m98</li><li>Android / IOS 编解码：MediaCodec / VideoToolBox</li><li>Windows 编解码：OpenH264 / FFmpeg H264</li><li>Android / IOS / Windows 渲染：OpenGL ES / Metal / StretchDIBits</li></ul><p>引用李超老师的一张数据流程图:</p><p><img src="http://devyk.top/2022/202306111502251.png" alt="image-20221119233539085"></p><p><strong>建议阅读顺序:</strong></p><p>第一种方式:</p><ul><li>IOS 阅读的话，可以参考 #? 序号，其它平台参考 IOS 阅读的顺序即可</li></ul><p>第二种方式:</p><ul><li><p>平台采集 -&gt; 公共编码 -&gt; 平台编码 -&gt; 公共编码 -&gt; 封包 -&gt; 发送-&gt;接收 -&gt; 解包 -&gt; 公共解码 -&gt; 平台解码</p><p>-&gt; 公共解码 -&gt; 平台渲染</p></li></ul><h2 id="_2-发送" tabindex="-1"><a class="header-anchor" href="#_2-发送" aria-hidden="true">#</a> 2. 发送</h2><h3 id="_2-1-采集" tabindex="-1"><a class="header-anchor" href="#_2-1-采集" aria-hidden="true">#</a> 2.1 采集</h3><h4 id="_2-1-1-ios" tabindex="-1"><a class="header-anchor" href="#_2-1-1-ios" aria-hidden="true">#</a> 2.1.1 IOS</h4><div class="language-tex line-numbers-mode" data-ext="tex"><pre class="language-tex"><code>#8	webrtc::ObjCVideoTrackSource::OnCapturedFrame(RTCVideoFrame*) at webrtc/sdk/objc/native/src/objc_video_track_source.mm:124
+#7	<span class="token punctuation">[</span>RTCVideoSource capturer:didCaptureVideoFrame:<span class="token punctuation">]</span> at webrtc/sdk/objc/api/peerconnection/RTCVideoSource.mm:79
+#6	<span class="token punctuation">[</span>RTCCameraVideoCapturer captureOutput:didOutputSampleBuffer:fromConnection:<span class="token punctuation">]</span> at webrtc/sdk/objc/components/capturer/RTCCameraVideoCapturer.m:299
+#5	<span class="token punctuation">[</span>videoDataOutput setSampleBufferDelegate:self queue:self.frameQueue<span class="token punctuation">]</span>;
+#4	<span class="token punctuation">[</span>RTCCameraVideoCapturer setupVideoDataOutput<span class="token punctuation">]</span> at webrtc/sdk/objc/components/capturer/RTCCameraVideoCapturer.m:455
+#3	<span class="token punctuation">[</span>RTCCameraVideoCapturer setupCaptureSession:<span class="token punctuation">]</span> at webrtc/sdk/objc/components/capturer/RTCCameraVideoCapturer.m:438
+#2	<span class="token punctuation">[</span>RTCCameraVideoCapturer initWithDelegate:captureSession:<span class="token punctuation">]</span> at webrtc/sdk/objc/components/capturer/RTCCameraVideoCapturer.m:73
+#1	<span class="token punctuation">[</span>RTCCameraVideoCapturer initWithDelegate:<span class="token punctuation">]</span> at webrtc/sdk/objc/components/capturer/RTCCameraVideoCapturer.m:62
+
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2-1-2-android" tabindex="-1"><a class="header-anchor" href="#_2-1-2-android" aria-hidden="true">#</a> 2.1.2 Android</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>########################### jni ###########################
+webrtc::jni::AndroidVideoTrackSource::OnFrameCaptured
+-&gt;android_video_track_source.cc:129
+Java_org_webrtc_NativeAndroidVideoTrackSource_nativeOnFrameCaptured
+-&gt;NativeAndroidVideoTrackSource_jni.h:109
+########################### java ###########################
+onFrameCaptured:58, NativeAndroidVideoTrackSource.java
+nativeAndroidVideoTrackSource.onFrameCaptured(adaptedFrame):73, VideoSource.java
+onFrameCaptured:62, VideoSource.java
+onFrameCaptured:155, CameraCapture.java
+events.onFrameCaptured:207, Camera2Session.java
+listener.onFrame(frame):384, SurfaceTextureHelper.java
+tryDeliverTextureFrame:207, SurfaceTextureHelper.java
+capturer.startCapture(videoWidth, videoHeight, videoFps):960, PeerConnectionClient.java
+setOnFrameAvailableListener:201, SurfaceTextureHelper.java
+new SurfaceTextureHelper:75, SurfaceTextureHelper.java
+create:64, SurfaceTextureHelper.java
+create:92, SurfaceTextureHelper.java
+SurfaceTextureHelper.create: SurfaceTextureHelper.java
+createVideoTrack:957, PeerConnectionClient.java
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2-1-3-windows" tabindex="-1"><a class="header-anchor" href="#_2-1-3-windows" aria-hidden="true">#</a> 2.1.3 Windows</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>TestVideoCapturer::OnFrame(const VideoFrame&amp; original_frame) test_video_captureer.cc 62
+VcmCapturer::OnFrame(const VideoFrame&amp; frame) vcm_capturer.cc 94
+VideoCaptureImpl::DeliverCapturedFrame(VideoFrame&amp; captureFrame) video_capture_impl.cc 107
+VideoCaptureImpl::IncomingFrame  video_capture_impl.cc 117
+CaptureSinkFilter::ProcessCapturedFrame sink_filter_ds.cc 916
+CaptureInputPin::Receive(IMediaSample* media_sample) sink_filter_ds.cc 732
+
+VideoCaptureDS::StartCapture(const VideoCaptureCapability&amp; capability) video_capture_ds.cc 132
+vcm_-&gt;StartCapture(capability_)  vcm_capturer.cc 55
+VideoCaptureDS::Init(const char* deviceUniqueIdUTF8) video_capture_ds.cc 58
+VideoCaptureImpl::Create video_capture_factory_windows.cc 31
+VideoCaptureFactory::Create video_capture_factory.cc 22
+VcmCapturer::Init vcm_capturer.cc 42
+VcmCapturer::Create vcm_capturer.cc 70
+CapturerTrackSource::Create()  conductor.cc 85
+Conductor::AddTracks() conductor.cc 487
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-2-编码" tabindex="-1"><a class="header-anchor" href="#_2-2-编码" aria-hidden="true">#</a> 2.2 编码</h3><p>公共部分:</p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#24	webrtc::VideoStreamEncoder::OnEncodedImage 
+-&gt; webrtc/video/video_stream_encoder.cc:1834
+
+...//中间部分在下面的平台编码
+
+#18	webrtc::VideoStreamEncoder::EncodeVideoFrame 
+-&gt; webrtc/video/video_stream_encoder.cc:1760
+#17	webrtc::VideoStreamEncoder::MaybeEncodeVideoFrame
+-&gt; webrtc/video/video_stream_encoder.cc:1619
+#16	webrtc::VideoStreamEncoder::OnFrame 
+-&gt; webrtc/video/video_stream_encoder.cc:1308
+#15	webrtc::VideoStreamEncoder::CadenceCallback::OnFrame 
+-&gt; webrtc/video/video_stream_encoder.h:152
+#14	webrtc::(anonymous namespace)::PassthroughAdapterMode::OnFrame(
+-&gt; webrtc/video/frame_cadence_adapter.cc:64
+#13	webrtc::(anonymous namespace)::FrameCadenceAdapterImpl::OnFrameOnMainQueue
+-&gt; webrtc/video/frame_cadence_adapter.cc:269
+#12	 webrtc::(anonymous namespace)::FrameCadenceAdapterImpl::OnFrame
+-&gt; webrtc/video/frame_cadence_adapter.cc:245
+#11	webrtc::(anonymous namespace)::FrameCadenceAdapterImpl::OnFrame
+-&gt; webrtc/video/frame_cadence_adapter.cc:239
+#10	rtc::VideoBroadcaster::OnFrame
+-&gt; webrtc/media/base/video_broadcaster.cc:97
+
+//ios &amp; android ,Windows 不执行 跳过， ↑ ↑ ↑ ↑
+#9	rtc::AdaptedVideoTrackSource::OnFrame
+-&gt; webrtc/media/base/adapted_video_track_source.cc:60
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_2-2-1-硬编码" tabindex="-1"><a class="header-anchor" href="#_2-2-1-硬编码" aria-hidden="true">#</a> 2.2.1 硬编码</h4><h5 id="_2-2-1-1-ios" tabindex="-1"><a class="header-anchor" href="#_2-2-1-1-ios" aria-hidden="true">#</a> 2.2.1.1 IOS</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+
+#23	invocation function for block in webrtc::(anonymous namespace)::ObjCVideoEncoder::RegisterEncodeCompleteCallback
+-&gt; webrtc/sdk/objc/native/src/objc_video_encoder_factory.mm:63
+
+#22	-[RTCVideoEncoderH264 frameWasEncoded:flags:sampleBuffer:
+codecSpecificInfo:width:height:renderTimeMs:timestamp:rotation:] 
+-&gt; webrtc/sdk/objc/components/video_codec/RTCVideoEncoderH264.mm:853
+
+#21 in (anonymous namespace)::compressionOutputCallback
+-&gt; webrtc/sdk/objc/components/video_codec/RTCVideoEncoderH264.mm:161
+
+#20	-[RTCVideoEncoderH264 encode:codecSpecificInfo:frameTypes:] 
+-&gt; webrtc/sdk/objc/components/video_codec/RTCVideoEncoderH264.mm:392
+
+#19	webrtc::(anonymous namespace)::ObjCVideoEncoder::Encode
+-&gt; webrtc/sdk/objc/native/src/objc_video_encoder_factory.mm:81
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="_2-2-1-1-android" tabindex="-1"><a class="header-anchor" href="#_2-2-1-1-android" aria-hidden="true">#</a> 2.2.1.1 Android</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>########################### jni ###########################
+↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+
+callback_-&gt;OnEncodedImage video_encoder_wrapper.cc:310
+VideoEncoderWrapper::OnEncodedFrame video_encoder_wrapper.cc:258
+Java_org_webrtc_VideoEncoderWrapper_nativeOnEncodedFrame VideoEncoderWrapper_jni.h:41
+########################### java ###########################
+nativeOnEncodedFrame:41 VideoEncoderWrapper.java
+callback.onEncodedFrame:642 HardwareVideoEncoder.java
+deliverEncodedImage():565 HardwareVideoEncoder.java
+textureEglBase.swapBuffers:425  HardwareVideoEncoder.java
+videoFrameDrawer.drawFrame:424  HardwareVideoEncoder.java
+encodeTextureBuffer:414  HardwareVideoEncoder.java
+encode:344 HardwareVideoEncoder.java
+########################### jni ###########################
+Java_VideoEncoder_encode VideoEncoder_jni.h :492
+webrtc::jni::VideoEncoderWrapper::Encode
+-&gt;video_encoder_wrapper.cc:147
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="_2-2-1-1-windows" tabindex="-1"><a class="header-anchor" href="#_2-2-1-1-windows" aria-hidden="true">#</a> 2.2.1.1 Windows</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>//todo...没有硬编码环境
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="_2-2-3-软编码" tabindex="-1"><a class="header-anchor" href="#_2-2-3-软编码" aria-hidden="true">#</a> 2.2.3 软编码</h4><p><strong>OpenH264:</strong></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+H264EncoderImpl::Encode h264_encoder_impl.cc 365
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-3-编码结束-rtp-打包" tabindex="-1"><a class="header-anchor" href="#_2-3-编码结束-rtp-打包" aria-hidden="true">#</a> 2.3 编码结束 -&gt; RTP 打包</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#36	webrtc::RtpPacketizerH264::PacketizeStapA
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_format_h264.cc:161
+#35	webrtc::RtpPacketizerH264::GeneratePackets
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_format_h264.cc:103
+#34	webrtc::RtpPacketizerH264::RtpPacketizerH264
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_format_h264.cc:62
+#33	webrtc::RtpPacketizerH264::RtpPacketizerH264
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_format_h264.cc:51
+#32	
+#31 webrtc::RtpPacketizer::Create
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_format.cc:43
+#30	webrtc::RTPSenderVideo::SendVideo
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender_video.cc:486
+#29	webrtc::RTPSenderVideo::SendEncodedImage
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender_video.cc:774
+#28 webrtc::RtpVideoSender::OnEncodedImage
+-&gt; webrtc/call/rtp_video_sender.cc:600
+#27	webrtc::internal::VideoSendStreamImpl::OnEncodedImage
+-&gt; webrtc/video/video_send_stream_impl.cc:566
+#26 
+#25 webrtc::VideoStreamEncoder::OnEncodedImage
+-&gt; webrtc/video/video_stream_encoder.cc:1904
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-4-打包完成-pacedsender-队列" tabindex="-1"><a class="header-anchor" href="#_2-4-打包完成-pacedsender-队列" aria-hidden="true">#</a> 2.4 打包完成 -&gt; PacedSender 队列</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#41	webrtc::PacingController::EnqueuePacket
+-&gt; webrtc/modules/pacing/pacing_controller.cc:241
+#40	webrtc::TaskQueuePacedSender::EnqueuePackets 
+-&gt; webrtc/modules/pacing/task_queue_paced_sender.cc:145
+#39 webrtc::TaskQueuePacedSender::EnqueuePackets
+-&gt; webrtc/modules/pacing/task_queue_paced_sender.cc:140
+#38 webrtc::RTPSender::EnqueuePackets
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender.cc:509
+#37 webrtc::RTPSenderVideo::LogAndSendToNetwork
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender_video.cc:210
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-5-socket-send" tabindex="-1"><a class="header-anchor" href="#_2-5-socket-send" aria-hidden="true">#</a> 2.5 Socket#send</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#59 ::sendto
+#58 rtc::PhysicalSocket::DoSendTo
+-&gt; webrtc/rtc_base/physical_socket_server.cc:510
+#57 rtc::PhysicalSocket::SendTo
+-&gt; webrtc/rtc_base/physical_socket_server.cc:375
+#56 rtc::AsyncUDPSocket::SendTo
+-&gt; webrtc/rtc_base/async_udp_socket.cc:84
+#55 cricket::UDPPort::SendTo
+-&gt; webrtc/p2p/base/stun_port.cc:286
+#54 cricket::ProxyConnection::Send
+-&gt; webrtc/p2p/base/connection.cc:1371
+#53 cricket::P2PTransportChannel::SendPacket
+-&gt; webrtc/p2p/base/p2p_transport_channel.cc:1616
+#52 cricket::DtlsTransport::SendPacket
+-&gt; webrtc/p2p/base/dtls_transport.cc:417
+#51 webrtc::RtpTransport::SendPacket
+-&gt; webrtc/pc/rtp_transport.cc:147
+#50 webrtc::SrtpTransport::SendRtpPacket
+-&gt; webrtc/pc/srtp_transport.cc:173
+#49 cricket::BaseChannel::SendPacket
+-&gt; webrtc/pc/channel.cc:437
+#48 cricket::BaseChannel::SendPacket
+-&gt; webrtc/pc/channel.cc:318
+#47 cricket::MediaChannel::DoSendPacket
+-&gt; webrtc/media/base/media_channel.cc:163
+#46	 cricket::MediaChannel::SendPacket
+-&gt; webrtc/media/base/media_channel.cc:71
+#45	 cricket::MediaChannel::SendRtp
+-&gt; webrtc/media/base/media_channel.cc:184
+#44	 cricket::WebRtcVideoChannel::SendRtp
+-&gt; webrtc/media/engine/webrtc_video_engine.cc:2058
+#43	 webrtc::RtpSenderEgress::SendPacketToNetwork
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender_egress.cc:553
+#42	 webrtc::RtpSenderEgress::SendPacket
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_sender_egress.cc:273
+#41	 webrtc::ModuleRtpRtcpImpl2::TrySendPacket
+-&gt; webrtc/modules/rtp_rtcp/source/rtp_rtcp_impl2.cc:376
+#40	 webrtc::PacketRouter::SendPacket
+-&gt; webrtc/modules/pacing/packet_router.cc:160
+#39	 webrtc::PacingController::ProcessPackets
+-&gt; webrtc/modules/pacing/pacing_controller.cc:585
+#38	webrtc::TaskQueuePacedSender::MaybeProcessPackets
+-&gt; webrtc/modules/pacing/task_queue_paced_sender.cc:234
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="_3-接收" tabindex="-1"><a class="header-anchor" href="#_3-接收" aria-hidden="true">#</a> 3. 接收</h2><h3 id="_3-1-接收-rtp-包" tabindex="-1"><a class="header-anchor" href="#_3-1-接收-rtp-包" aria-hidden="true">#</a> 3.1 接收 RTP 包</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#12	cricket::WebRtcVideoChannel::OnPacketReceived
+-&gt; webrtc/media/engine/webrtc_video_engine.cc:1744
+#11	cricket::BaseChannel::OnRtpPacket
+-&gt; webrtc/pc/channel.cc:467
+#10	webrtc::RtpDemuxer::OnRtpPacket
+-&gt; webrtc/call/rtp_demuxer.cc:249
+#09	webrtc::RtpTransport::DemuxPacket
+-&gt; webrtc/pc/rtp_transport.cc:194
+#08	webrtc::SrtpTransport::OnRtpPacketReceived
+-&gt; webrtc/pc/srtp_transport.cc:226
+#07	webrtc::RtpTransport::OnReadPacket
+-&gt; webrtc/pc/rtp_transport.cc:268
+#06	 cricket::DtlsTransport::OnReadPacket
+-&gt; webrtc/p2p/base/dtls_transport.cc:627
+#05	cricket::P2PTransportChannel::OnReadPacket
+-&gt; webrtc/p2p/base/p2p_transport_channel.cc:2215
+#04	cricket::Connection::OnReadPacket
+-&gt; webrtc/p2p/base/connection.cc:465
+#03	cricket::UDPPort::OnReadPacket
+-&gt; webrtc/p2p/base/stun_port.cc:394
+#02	cricket::UDPPort::HandleIncomingPacket
+-&gt; webrtc/p2p/base/stun_port.cc:335
+#01	cricket::AllocationSequence::OnReadPacket
+-&gt; webrtc/p2p/client/basic_port_allocator.cc:1639
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-2-解包-放入缓冲区" tabindex="-1"><a class="header-anchor" href="#_3-2-解包-放入缓冲区" aria-hidden="true">#</a> 3.2 解包 &amp; 放入缓冲区</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#25 webrtc::video_coding::FrameBuffer::InsertFrame
+-&gt; webrtc/modules/video_coding/frame_buffer2.cc:407
+#24 webrtc::internal::VideoReceiveStream2::OnCompleteFrame
+-&gt; webrtc/video/video_receive_stream2.cc:660
+#23 webrtc::RtpVideoStreamReceiver2::OnCompleteFrames
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:862
+#22 webrtc::RtpVideoStreamReceiver2::OnAssembledFrame
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:850
+#21 webrtc::RtpVideoStreamReceiver2::OnInsertedPacket
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:755
+#20 webrtc::RtpVideoStreamReceiver2::OnReceivedPayloadData
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:620
+#19 webrtc::RtpVideoStreamReceiver2::ReceivePacket
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:965
+#18 webrtc::RtpVideoStreamReceiver2::OnRtpPacket
+-&gt; webrtc/video/rtp_video_stream_receiver2.cc:654
+#17 webrtc::RtpDemuxer::OnRtpPacket
+-&gt; webrtc/call/rtp_demuxer.cc:249
+#16 webrtc::RtpStreamReceiverController::OnRtpPacket
+-&gt; webrtc/call/rtp_stream_receiver_controller.cc:52
+#15 webrtc::internal::Call::DeliverRtp
+-&gt; webrtc/call/call.cc:1615
+#14	 webrtc::internal::Call::DeliverPacket
+-&gt; webrtc/call/call.cc:1637
+#13	cricket::WebRtcVideoChannel::OnPacketReceived
+-&gt; webrtc/media/engine/webrtc_video_engine.cc:1748
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-3-解码" tabindex="-1"><a class="header-anchor" href="#_3-3-解码" aria-hidden="true">#</a> 3.3 解码</h3><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#48 rtc::VideoBroadcaster::OnFrame
+-&gt; webrtc/media/base/video_broadcaster.cc:97
+#47 cricket::WebRtcVideoChannel::WebRtcVideoReceiveStream::OnFrame
+-&gt; webrtc/media/engine/webrtc_video_engine.cc:3129
+#46 webrtc::internal::VideoReceiveStream2::OnFrame
+-&gt; webrtc/video/video_receive_stream2.cc:589
+#45 webrtc::IncomingVideoStream::Dequeue
+-&gt; webrtc/common_video/incoming_video_stream.cc:56
+#44 webrtc::IncomingVideoStream::OnFrame
+-&gt; webrtc/common_video/incoming_video_stream.cc:47
+#43 webrtc::IncomingVideoStream::OnFrame
+-&gt; webrtc/common_video/incoming_video_stream.cc:44
+#42 webrtc::internal::VideoStreamDecoder::FrameToRender
+-&gt; webrtc/video/video_stream_decoder2.cc:51
+#41 webrtc::VCMDecodedFrameCallback::Decoded
+-&gt; webrtc/modules/video_coding/generic_decoder.cc:74
+#39	 webrtc::VCMDecodedFrameCallback::Decoded
+-&gt; webrtc/modules/video_coding/generic_decoder.cc:69
+
+
+//....看个平台的实现
+
+#34 webrtc::VCMGenericDecoder::Decode
+-&gt; webrtc/modules/video_coding/generic_decoder.cc:283
+
+#33 webrtc::VideoReceiver2::Decode
+-&gt; webrtc/modules/video_coding/video_receiver2.cc:109
+
+#32 webrtc::internal::VideoReceiveStream2::DecodeAndMaybeDispatchEncodedFrame
+-&gt; webrtc/video/video_receive_stream2.cc:842
+
+#31 webrtc::internal::VideoReceiveStream2::HandleEncodedFrame
+-&gt; webrtc/video/video_receive_stream2.cc:776
+
+#30 webrtc::internal::VideoReceiveStream2::StartNextDecode
+-&gt; webrtc/video/video_receive_stream2.cc:729
+
+#29 webrtc::video_coding::FrameBuffer::StartWaitForNextFrameOnQueue
+-&gt; webrtc/modules/video_coding/frame_buffer2.cc:131
+
+#28 webrtc::RepeatingTaskHandle webrtc::RepeatingTaskHandle::
+DelayedStart&lt;webrtc::video_coding::FrameBuffer::StartWaitForNextFrameOnQueue
+-&gt; webrtc/rtc_base/task_utils/repeating_task.h:130
+
+#27 webrtc::video_coding::FrameBuffer::StartWaitForNextFrameOnQueue
+-&gt; webrtc/modules/video_coding/frame_buffer2.cc:106
+
+#26 webrtc::video_coding::FrameBuffer::InsertFrame
+-&gt; webrtc/modules/video_coding/frame_buffer2.cc:499
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-3-1-硬解码" tabindex="-1"><a class="header-anchor" href="#_3-3-1-硬解码" aria-hidden="true">#</a> 3.3.1 硬解码</h4><h5 id="_3-3-1-1-ios" tabindex="-1"><a class="header-anchor" href="#_3-3-1-1-ios" aria-hidden="true">#</a> 3.3.1.1 IOS</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+
+#38	webrtc::(anonymous namespace)::ObjCVideoDecoder::RegisterDecodeCompleteCallback(
+-&gt; webrtc/sdk/objc/native/src/objc_video_decoder_factory.mm:70
+
+
+#37	decompressionOutputCallback
+-&gt; webrtc/sdk/objc/components/video_codec/RTCVideoDecoderH264.mm:53
+
+#36 -[RTCVideoDecoderH264 decode:missingFrames:codecSpecificInfo:renderTimeMs:] 
+-&gt; webrtc/sdk/objc/components/video_codec/RTCVideoDecoderH264.mm:107
+#35	webrtc::(anonymous namespace)::ObjCVideoDecoder::Decode
+-&gt; webrtc/sdk/objc/native/src/objc_video_decoder_factory.mm:51
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="_3-3-1-2-android" tabindex="-1"><a class="header-anchor" href="#_3-3-1-2-android" aria-hidden="true">#</a> 3.3.1.2 Android</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+########################### jni ###########################
+webrtc::jni::VideoDecoderWrapper video_deocder_wrapper.cc 191
+Java_org_webrtc_VideoDecoderWrapper_nativeOnDecodedFrame VideoDecoderWrapper_jni.cc 50
+Java_org_webrtc_VideoDecoderWrapper_nativeOnDecodedFrame VideoDecoderWrapper_jni.cc 41
+########################### java ###########################
+lambda$createDecoderCallback$0:22, VideoDecoderWrapper.java
+onFrame:451, AndroidVideoDecoder.java
+tryDeliverTextureFrame:384, SurfaceTextureHelper.java
+lambda$new$tryDeliverTextureFrame$SurfaceTextureHelper:207, SurfaceTextureHelper.java
+deliverDecodedFrame:402, AndroidVideoDecoder.java
+decode:209, AndroidVideoDecoder.java
+########################### jni ###########################
+Java_VideoDecoder_decode VideoDecoder_jni.cc 146
+webrtc::jni::VideoDecoderWrapper::Decode video_decoder_wrapper.cc 123
+webrtc::VideoDecoderSoftwareFallbackWrapper video_decoder_software_fallback_wrapper.cc 187
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h5 id="_3-3-1-3-windows" tabindex="-1"><a class="header-anchor" href="#_3-3-1-3-windows" aria-hidden="true">#</a> 3.3.1.3 Windows</h5><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>//todo ... 没有硬解码环境
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h4 id="_3-3-2-软解码" tabindex="-1"><a class="header-anchor" href="#_3-3-2-软解码" aria-hidden="true">#</a> 3.3.2 软解码</h4><p><strong>FFmpeg h264:</strong></p><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>↑↑↑↑↑↑↑↑↑↑↑↑
+看上面公共部分代码
+↑↑↑↑↑↑↑↑↑↑↑↑
+H264DecoderImpl::Decode h264_decoder_impl.cc 256
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_3-4-视频渲染" tabindex="-1"><a class="header-anchor" href="#_3-4-视频渲染" aria-hidden="true">#</a> 3.4 视频渲染</h3><h4 id="_3-4-1-ios" tabindex="-1"><a class="header-anchor" href="#_3-4-1-ios" aria-hidden="true">#</a> 3.4.1 IOS</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>#51	 -[RTCMTLVideoView renderFrame:] 
+-&gt; webrtc/sdk/objc/components/renderer/metal/RTCMTLVideoView.m:253
+#50	 webrtc::VideoRendererAdapter::OnFrame
+-&gt; webrtc/sdk/objc/api/RTCVideoRendererAdapter.mm:40
+#49	 webrtc::VideoRendererAdapter::OnFrame
+-&gt; webrtc/sdk/objc/api/RTCVideoRendererAdapter.mm:30
+
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-4-2-android" tabindex="-1"><a class="header-anchor" href="#_3-4-2-android" aria-hidden="true">#</a> 3.4.2 Android</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>########################### java ###########################
+eglBase.swapBuffers:669 EglRenderer.java
+frameDrawer.drawFrame:664 EglRenderer.java
+renderFrameOnRenderThread:597 EglRenderer.java
+onFrame:102 SurfaceEglRenderer.java
+onFrame:184 SurfaceVideoRenderer.java
+onFrame:138, CallActivity$ProxyVideoSink.java
+########################### jni ###########################
+Java_VideoSink_onFrame VideoSink_jni.h 43
+webrtc::jni::VideoSinkWrapper::OnFrame video_sink.cc 24
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h4 id="_3-4-3-windows" tabindex="-1"><a class="header-anchor" href="#_3-4-3-windows" aria-hidden="true">#</a> 3.4.3 Windows</h4><div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>MainWnd::VideoRenderer::OnFrame(const webrtc::VideoFrame&amp; video_frame) main_wnd.cc 613
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="总结" tabindex="-1"><a class="header-anchor" href="#总结" aria-hidden="true">#</a> 总结</h2><p>通过该篇文章我们已经大致熟悉了 WebRTC 在 IOS 、Android 、Windows 平台上的视频数据流程，在阅读代码的过程中，我们可以看一下它是如何做到的跨平台，相关跨平台的 API 又是如何设计的？这些都是值得我们去学习的。</p><h2 id="参考" tabindex="-1"><a class="header-anchor" href="#参考" aria-hidden="true">#</a> 参考</h2><ul><li><a href="https://dabaojian.blog.csdn.net/article/details/123012882" target="_blank" rel="noopener noreferrer">WebRTC Native M96 视频发送编码(OpenH264)流程以及接收视频包解码(FFmpeg)播放流程<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></li><li><a href="https://blog.csdn.net/sonysuqin/article/details/106629343" target="_blank" rel="noopener noreferrer">WebRTC视频JitterBuffer详解<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span></a></li></ul></div><!--[--><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="external-link meta-item-label" href="https://github.com/yangkun19921001/AudioVideoBlogDoc/edit/main/docs/pages/webrtc/WebRTC源码分析(四) Android、IOS、Windows 视频数据流程分析.md" rel="noopener noreferrer" target="_blank" aria-label="Edit this page"><!--[--><!--]--> Edit this page <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><span class="external-link-icon-sr-only">open in new window</span></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: yang1001yk@gmail.com">make</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%B8%89)PeerConnection%20Client.html" class="" aria-label="WebRTC源码分析(三)PeerConnection Client"><!--[--><!--]--> WebRTC源码分析(三)PeerConnection Client <!--[--><!--]--></a></span><span class="next"><a href="/AudioVideoBlog/pages/webrtc/WebRTC%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90(%E4%BA%94)%E8%8B%B9%E6%9E%9C%E8%AE%BE%E5%A4%87%E7%9B%B8%E6%9C%BA%E9%87%87%E9%9B%86.html" class="" aria-label="WebRTC源码分析(五)苹果设备相机采集"><!--[--><!--]--> WebRTC源码分析(五)苹果设备相机采集 <!--[--><!--]--></a></span></p></nav><!--[--><!--[--><div id="comment" class="giscus-wrapper input-top" style="display:block;"><div class="loading-icon-wrapper" style="display:flex;align-items:center;justify-content:center;height:96px"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMidYMid" viewBox="25 25 50 50"><animateTransform attributeName="transform" type="rotate" dur="2s" keyTimes="0;1" repeatCount="indefinite" values="0;360"></animateTransform><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="1,200;90,200;1,200"></animate><animate attributeName="stroke-dashoffset" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="0;-35px;-125px"></animate></circle></svg></div></div><!--]--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script src="/AudioVideoBlog/assets/js/v-06bb4a38.ec767255.js" defer></script><script src="/AudioVideoBlog/assets/js/runtime~app.05409ea8.js" defer></script><script src="/AudioVideoBlog/assets/js/48.afaf53c5.js" defer></script><script src="/AudioVideoBlog/assets/js/app.d2cafc2e.js" defer></script>
+  </body>
+</html>
